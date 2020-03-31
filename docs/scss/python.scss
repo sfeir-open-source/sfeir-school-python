@@ -1,0 +1,28 @@
+.reveal .slides section {
+  &.center, .center {
+    text-align: center;
+  }
+
+  .big-text {
+    font-size: 3em;
+  }
+
+  &.sfeir-basic-slide {
+    .center-big {
+      text-align: center;
+      font-size: 2.5em;
+      color: black;
+    }
+    h1.center-big {
+      font-size: 3em;
+    }
+  }
+
+  &.with-code,
+  &.with-code-dark {
+    pre.big-code:not(.literal) {
+      position: relative;
+      top: 0;
+    }
+  }
+}

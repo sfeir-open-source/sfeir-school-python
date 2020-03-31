@@ -1,26 +1,34 @@
-# About
-Template repository for Sfeir School, this template could be use to start a school with revealJS and sfeir school theme
-
-Don't forget to replace all xxx by your techno
-
-## Files to changes
-
-* `docs/scss/xxx.scss` the entry point for your custom styles.
-* `docs/package.json` you should change the tasks `sass` and `sass-once` to reference your scss file
-* `docs/index.html` you should reference your markdown files and the the correct css file
-
-# Content of README
-
-The text below is the template you could use for your readme
-
-# XXX 
+# Python 200
 
 A [SFEIR School](https://www.sfeir.com/formation/school/)
 
-![logo](https://www.sfeir.com/img/school/formations/xxx.png)
+![logo](https://www.sfeir.com/img/school/formations/Python%20200.png)
 
-[Planning, trainers and other details](https://www.sfeir.com/formation/school/xxx/)
+[Planning, trainers and other details](https://www.sfeir.com/school/python-200/)
 
 # Slides
 
-You can view the slides [here](https://sfeir-open-source.github.io/sfeir-school-xxx/).
+You can view the slides [here](https://sfeir-open-source.github.io/sfeir-school-python/).
+
+# Run project
+
+    # Install dependencies
+    `npm i`
+
+    # Run application
+    `npm start`
+
+    # Run step
+    `npm start --step=XXX `
+
+# Steps
+
+Each exercice has two directories:
+
+- a clean directory to get you started (ex: step-3)
+- a solution directory (ex: step-3-solution)
+
+to go a step run the npm script with `--step=XX` :
+
+- `npm start --step=3` for an exercice
+- `npm start --step=3-solution` for the solution
