@@ -12,9 +12,10 @@ You can view the slides [here](https://sfeir-open-source.github.io/sfeir-school-
 
 # Steps
 
-Each exercise has its own directory to get you started (ex: step03).
+Each exercise has two directories:
 
-Solution for an exercise can be found under the solutions directory (ex: solutions/step03).
+- a clean directory to get you started (ex: step-03)
+- a solution directory (ex: step-03-solution)
 
 To run an exercise or a solution:
 
