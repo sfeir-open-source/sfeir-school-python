@@ -10,25 +10,13 @@ A [SFEIR School](https://www.sfeir.com/formation/school/)
 
 You can view the slides [here](https://sfeir-open-source.github.io/sfeir-school-python/).
 
-# Run project
-
-    # Install dependencies
-    `npm i`
-
-    # Run application
-    `npm start`
-
-    # Run step
-    `npm start --step=XXX `
-
 # Steps
 
-Each exercice has two directories:
+Each exercise has its own directory to get you started (ex: step03).
 
-- a clean directory to get you started (ex: step-3)
-- a solution directory (ex: step-3-solution)
+Solution for an exercise can be found under the solutions directory (ex: solutions/step03).
 
-to go a step run the npm script with `--step=XX` :
+To run an exercise or a solution:
 
-- `npm start --step=3` for an exercice
-- `npm start --step=3-solution` for the solution
+- `pip install -r requirements.txt` (if third-party libraries are required)
+- `python main.py`
