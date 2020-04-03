@@ -26,3 +26,17 @@
     }
   }
 }
+
+.reveal pre code {
+  max-height: 800px!important;
+}
+
+.reveal .slides section.exercice {
+  ul {
+    font-size: 1.4em!important;
+
+    ul {
+      font-size: 1em!important;
+    }
+  }
+}
