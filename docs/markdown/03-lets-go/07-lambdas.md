@@ -7,7 +7,7 @@
 * Une lambda est une fonction anonyme d’une seule ligne.
 
 ```python
-get_xy = lambda s: (float(s.split(' ')[0]), float(s.split(' ')[1]))
+get_xy = lambda s: (float(s.split(' ')[0]), float(s.split(' ')[1]))
 ```
 
 <!-- .element: class="big-code" -->
@@ -30,7 +30,7 @@ get_xy('12.345 -6.789')  # (12.345, -6.789)
 * Une lambda est une fonction anonyme d’une seule ligne.
 
 ```python
-is_palindrome = lambda s: s == s[::-1]
+is_palindrome = lambda s: s == s[::-1]
 ```
 
 <!-- .element: class="big-code" -->
@@ -39,7 +39,7 @@ is_palindrome = lambda s: s == s[::-1]
 
 ```python
 is_palindrome('mon nom')
-# True
+# True
 ```
 
 <!-- .element: class="big-code" -->

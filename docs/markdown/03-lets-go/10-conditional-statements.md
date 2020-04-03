@@ -4,10 +4,10 @@
 
 **Les conditions**
 
-* La déclaration if en Python s’écrit sans parenthèse :
+* La déclaration if en Python s’écrit sans parenthèse :
 
 ```python
-if condition:
+if condition:
   pass
 ```
 
@@ -39,12 +39,12 @@ Parler des keywords “pass” / “del”
 
 **Les conditions**
 
-* La clause “**else**” s’utilise de façon classique et les “**elif**” peuvent être mis à la suite les uns des autres.
+* La clause “**else**” s’utilise de façon classique et les “**elif**” peuvent être mis à la suite les uns des autres.
 
 ```python
-if condition1:
-  print 'c1'
-elif condition2:
+if condition1:
+  print 'c1'
+elif condition2:
   print 'c2'
 else:
   print 'c3'
@@ -62,7 +62,7 @@ Pas de switch => possibilité de faire une seule ligne en cas d’assignation ou
 
 **Les conditions**
 
-* Une ternaire est une condition sur une ligne.
+* Une ternaire est une condition sur une ligne.
 
 ```python
 value = 42

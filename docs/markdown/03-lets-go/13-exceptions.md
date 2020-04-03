@@ -39,7 +39,7 @@
 * Il est courant de déclarer sa propre exception :
 
 ```python
-class MyCustomException(Exception):
+class MyCustomException(Exception):
   pass
 ```
 
@@ -57,16 +57,16 @@ class MyCustomException(Exception):
 **Les exceptions**
 
 ```python
-try:
-  return animals[100 / i]
+try:
+  return animals[100 / i]
 
-except (IndexError, ZeroDivisionError):
-  return None
+except (IndexError, ZeroDivisionError):
+  return None
 
-except KeyError:
-  pass  # "animals" is a dict?
+except KeyError:
+  pass  # "animals" is a dict?
   
-finally:
+finally:
   print 'always executed'
 ```
 

@@ -5,10 +5,10 @@
 **Les fonctions**
 
 * Une fonction est déclarée à l’aide du mot clé **def** suivi du nom de la fonction.
-* Le corps de la fonction correspond à tout ce qui est indenté dans le même bloc en-dessous.
+* Le corps de la fonction correspond à tout ce qui est indenté dans le même bloc en-dessous.
 
 ```python
-def is_palindrome():
+def is_palindrome():
   pass
 ```
 
@@ -21,10 +21,10 @@ def is_palindrome():
 
 **Les fonctions**
 
-* Une fonction peut prendre zéro ou plusieurs arguments.
+* Une fonction peut prendre zéro ou plusieurs arguments.
 
 ```python
-def is_palindrome(s):
+def is_palindrome(s):
   pass
 ```
 
@@ -44,7 +44,7 @@ def is_palindrome(s):
 * Une fonction peut prendre des arguments par défaut.
 
 ```python
-def ma_fonction(a, b, c=False, d=None):
+def ma_fonction(a, b, c=False, d=None):
   pass
 ```
 
@@ -67,10 +67,10 @@ ma_fonction(10, 42, 'ok')
 
 **Les fonctions**
 
-* Une fonction peut retourner une valeur.
+* Une fonction peut retourner une valeur.
 
 ```python
-def is_palindrome(s):
+def is_palindrome(s):
   return True
 ```
 
@@ -83,12 +83,12 @@ def is_palindrome(s):
 
 **Les fonctions**
 
-* Une fonction peut aussi retourner **plusieurs** valeurs.
+* Une fonction peut aussi retourner **plusieurs** valeurs.
 
 ```python
-def get_xy(s):
-  # 12.345 -6.789
-  xy = s.split(' ')
+def get_xy(s):
+  # 12.345 -6.789
+  xy = s.split(' ')
   return float(xy[0]), float(xy[1])
 ```
 
@@ -101,11 +101,11 @@ def get_xy(s):
 
 **Les fonctions**
 
-* Les fonctions peuvent aussi prendre un nombre d’arguments indéterminé.
+* Les fonctions peuvent aussi prendre un nombre d’arguments indéterminé.
 
 ```python
-def myFunc(*args, **kwargs):
-  print args, kwargs
+def myFunc(*args, **kwargs):
+  print args, kwargs
 
 myFunc(42, 'hello', param='world')
 # args: (42, 'hello')

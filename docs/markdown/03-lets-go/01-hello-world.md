@@ -9,7 +9,7 @@ Interpréteur Python :
 * quit(), help(‘function or lib’), dir(‘type or lib’)
 
 Notes:
-Comme on le disait plus tôt, Python est un langage interprété, par conséquent il dispose d’un moteur d’exécution. Vous pouvez accéder directement à ce moteur en tapant juste “python3” dans votre terminal.Cela démarrera un interpreteur REPL (Read, Eval, Print, Loop) Python qui attendra vos inputs pour les évaluer (à noter, un interpréteur à une session courante dans laquelle il va stocker l’historique de vos commandes ainsi que les fonctions, types ou variable que vous avez créé précédement.
+Comme on le disait plus tôt, Python est un langage interprété, par conséquent il dispose d’un moteur d’exécution. Vous pouvez accéder directement à ce moteur en tapant juste “python3” dans votre terminal.Cela démarrera un interpreteur REPL (Read, Eval, Print, Loop) Python qui attendra vos inputs pour les évaluer (à noter, un interpréteur à une session courante dans laquelle il va stocker l’historique de vos commandes ainsi que les fonctions, types ou variable que vous avez créé précédement.
 
 Dans cet interpréteur, 3 commandes sont importantes :
 
@@ -62,4 +62,4 @@ ou
 `$ ./main.py`
 
 Notes:
-On peut également écrire les instructions python dans un fichier (un script), et lancer manuellement le moteur Python sur ce fichier.On peut même donner une indication à notre système (si c’est un système Unix comme GNU/Linux ou macOS) sur le moteur à utiliser avec #!/bin/python (ou autre chose si votre chemin vers python3 est différent -- vous pouvez faire un which python3 pour le savoir), rendre le fichier executable et le lancer directement.
+On peut également écrire les instructions python dans un fichier (un script), et lancer manuellement le moteur Python sur ce fichier.On peut même donner une indication à notre système (si c’est un système Unix comme GNU/Linux ou macOS) sur le moteur à utiliser avec #!/bin/python (ou autre chose si votre chemin vers python3 est différent -- vous pouvez faire un which python3 pour le savoir), rendre le fichier executable et le lancer directement.

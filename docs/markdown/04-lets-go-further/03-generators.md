@@ -18,12 +18,12 @@
 
 **Le générateur**
 
-* Un exemple simple de générateur :
+* Un exemple simple de générateur :
 
 ```python
-def simple_generator():
-  yield 1
-  yield 2
+def simple_generator():
+  yield 1
+  yield 2
   yield 3
 ```
 
@@ -84,11 +84,11 @@ Generators are not indexable, which means that simple_generator_function[2] will
 * Comment ça marche ?
 
 ```python
-g = simple_generator()
+g = simple_generator()
 
-next(g)  # 1
-next(g)  # 2
-next(g)  # 3
+next(g)  # 1
+next(g)  # 2
+next(g)  # 3
 next(g)  # StopIteration
 ```
 
@@ -113,8 +113,8 @@ Generators are not indexable, which means that simple_generator_function[2] will
 * Le générateur retourne un itérable :
 
 ```python
-for i in simple_generator():
-  print i
+for i in simple_generator():
+  print i
 
 list(simple_generator())
 ```
@@ -140,9 +140,9 @@ Le mécanisme de “StopIteration” est automatique géré par la boucle
 <br>
 
 ```python
-def repeater():
-  while True:
-    received = yield
+def repeater():
+  while True:
+    received = yield
     print('Echo:', received)
 ```
 
@@ -155,7 +155,7 @@ def repeater():
 ```python
 rp = repeater()
 
-next(rp) # Start the coroutine
+next(rp) # Start the coroutine
 rp.send('Hello')  # Echo: Hello
 rp.send('world!')  # Echo: world!
 ```

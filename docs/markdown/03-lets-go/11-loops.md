@@ -16,13 +16,13 @@
 
 **Les boucles**
 
-* Par exemple, pour itérer de 0 à 9 avec un pas de 1 (par défaut) :
+* Par exemple, pour itérer de 0 à 9 avec un pas de 1 (par défaut) :
 
 ```python
-def is_palindrome(s):
-  for i in range(0, len(s)):
-    if s[i] != s[len(s)-i-1]:
-      return False
+def is_palindrome(s):
+  for i in range(0, len(s)):
+    if s[i] != s[len(s)-i-1]:
+      return False
   return True
 ```
 

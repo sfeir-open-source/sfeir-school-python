@@ -28,13 +28,13 @@ Modularité : permet d’organiser son code en conséquence et de le partager ai
 * Le décorateur doit retourner une fonction : le wrapper.
 
 ```python
-def mon_decorateur(func):
-  def wrapper():
-    print 'avant'
-    res = func()
-    print 'après'
+def mon_decorateur(func):
+  def wrapper():
+    print 'avant'
+    res = func()
+    print 'après'
 
-    return res
+    return res
   return wrapper
 ```
 
@@ -54,8 +54,8 @@ Le wrapper : fonction qui enveloppe généralement la fonction initiale
 
 ```python
 @mon_decorateur
-def is_palindrome(s='hello'):
-  """Indique si la chaine s est un palindrome"""
+def is_palindrome(s='hello'):
+  """Indique si la chaine s est un palindrome"""
   return s == s[::-1]
 
 mon_decorateur(is_palindrome)()  # sans le décorateur
@@ -73,13 +73,13 @@ mon_decorateur(is_palindrome)()  # sans le décorateur
 * Comment gérer le passage des arguments ?
 
 ```python
-def mon_decorateur(func):
-  def wrapper(*args, **kwargs):
-    print 'avant'
-    res = func(*args, **kwargs)
-    print 'après'
+def mon_decorateur(func):
+  def wrapper(*args, **kwargs):
+    print 'avant'
+    res = func(*args, **kwargs)
+    print 'après'
 
-    return res
+    return res
   return wrapper
 ```
 
@@ -95,13 +95,13 @@ def mon_decorateur(func):
 * Comment rendre un décorateur paramétrable ?
 
 ```python
-def mon_super_decorateur(call=True):
-  def mon_decorateur(func):
-    def wrapper(*args, **kwargs):
-      if call:
-        return func(*args, **kwargs)
+def mon_super_decorateur(call=True):
+  def mon_decorateur(func):
+    def wrapper(*args, **kwargs):
+      if call:
+        return func(*args, **kwargs)
 
-    return wrapper
+    return wrapper
   return mon_decorateur
 ```
 
@@ -117,7 +117,7 @@ def mon_super_decorateur(call=True):
 * Comment l’utiliser ?
 
 ```python
-@mon_super_decorateur()
+@mon_super_decorateur()
 @mon_super_decorateur(call=False)
 ```
 
@@ -143,18 +143,18 @@ mon_super_decorateur(True)(is_palindrome)()
 * Le décorateur remplace les propriétés initiales de la fonction.
 
 ```python
-is_palindrome.__name__  # wrapper
-is_palindrome.__doc__  #
+is_palindrome.__name__  # wrapper
+is_palindrome.__doc__  #
 ```
 
 <!-- .element: class="big-code" -->
 
 <br>
 
-* Utiliser le décorateur “wraps”.
+* Utiliser le décorateur “wraps”.
 
 ```python
-is_palindrome.__name__  # is_palindrome
+is_palindrome.__name__  # is_palindrome
 is_palindrome.__doc__  # indique si la chaine s est un palindrome
 ```
 
@@ -174,13 +174,13 @@ wraps n’est pas obligatoire mais conseillé
 
 ```python
 import functools
-def mon_super_decorateur(call=True):
-  def mon_decorateur(func):
-    @functools.wraps(func)
-    def wrapper(*args, **kwargs):
-      if call:
-        return func(*args, **kwargs)
-    return wrapper
+def mon_super_decorateur(call=True):
+  def mon_decorateur(func):
+    @functools.wraps(func)
+    def wrapper(*args, **kwargs):
+      if call:
+        return func(*args, **kwargs)
+    return wrapper
   return mon_decorateur
 ```
 

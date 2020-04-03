@@ -5,13 +5,13 @@
 **Opérations sur les dictionnaires**
 
 ```python
-a = {'key1': 'abc', 'key2': 'xyz'}
+a = {'key1': 'abc', 'key2': 'xyz'}
 a.keys() // a.values()  # ['key2', 'key1'] // ['xyz', 'abc']
 a.items()  # [('key2', 'xyz'), ('key1', 'abc')]
-a.iterkeys() // a.itervalues()  # iterator
+a.iterkeys() // a.itervalues()  # iterator
 a.iteritems()  # iterator
 
-'key1' in a  # True
+'key1' in a  # True
 a['key1'] // a.get('key1') // a.get('key3', 'abc')  # abc
 ```
 
@@ -30,11 +30,11 @@ Rappel : les dictionnaires ne sont pas ordonnés.
 ```python
 a = [10, 30, 20]
 
-a[0]  # 10
-a[3]  # IndexError: list index out of range
-a += '40'  # [10, 30, 20, 4, 0]
-a += [40] // a.append(40)  # [10, 30, 20, 40]
-a.reverse()  # Ne retourne rien : [20, 30, 10]
+a[0]  # 10
+a[3]  # IndexError: list index out of range
+a += '40'  # [10, 30, 20, 4, 0]
+a += [40] // a.append(40)  # [10, 30, 20, 40]
+a.reverse()  # Ne retourne rien : [20, 30, 10]
 reversed(a)  # il faut itérer pour avoir la liste
 sorted(a)  # [10, 20, 30]
 ```

@@ -11,7 +11,7 @@
   * Code auto compilé en bytecode (.pyc & .pyo)
 
 Notes:
-Facts :* Pour distribuer un script python simple, pas besoin de créer un binaire exécutable. Vous pouvez juste transmettre le fichier .py !
+Facts :* Pour distribuer un script python simple, pas besoin de créer un binaire exécutable. Vous pouvez juste transmettre le fichier .py !
 
 * Le typage de Python est dynamique. Cela signifie qu’il ne va faire les vérifications de validité d’opération sur des variables qu’au moment où celles-ci sont utilisés.
 

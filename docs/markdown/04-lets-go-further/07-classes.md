@@ -17,15 +17,15 @@
 **Les classes**
 
 ```python
-class Giraffe(object):
-  def drink(self):
-    print 'The giraffe is drinking.'
+class Giraffe(object):
+  def drink(self):
+    print 'The giraffe is drinking.'
 
-  def eat(self):
+  def eat(self):
     print 'The giraffe is eating.'
 
 maya = Giraffe()
-maya.drink()
+maya.drink()
 maya.eat()
 ```
 
@@ -62,17 +62,17 @@ maya = Giraffe('Maya')
 **Les classes - héritage**
 
 ```python
-class Animal(object):
-  def __init__(self, name):
-    self.name = name
+class Animal(object):
+  def __init__(self, name):
+    self.name = name
 
-  def drink(self):
-    print '{} is drinking.'.format(self.name)
+  def drink(self):
+    print '{} is drinking.'.format(self.name)
 
-  def eat(self):
+  def eat(self):
     print '{} is eating.'.format(self.name)
 
-class Giraffe(Animal): pass
+class Giraffe(Animal): pass
 ```
 
 <!-- .element: class="big-code" -->
@@ -85,16 +85,16 @@ class Giraffe(Animal): pass
 **Les classes - héritage**
 
 ```python
-class Giraffe(Animal):
-  def eat_leaves(self):
+class Giraffe(Animal):
+  def eat_leaves(self):
     print '{} is eating some leaves.'.format(self.name)
 
-class Carnivorous(Animal):
-  def __init__(self, name, diet='carnivore'):
-    self.diet = diet
-    super(Carnivorous, self).__init__(name)
+class Carnivorous(Animal):
+  def __init__(self, name, diet='carnivore'):
+    self.diet = diet
+    super(Carnivorous, self).__init__(name)
 
-  def display_diet(self):
+  def display_diet(self):
     print '{} is {}.'.format(self.name, self.diet)
 ```
 
@@ -112,11 +112,11 @@ class Carnivorous(Animal):
 <br>
 
 ```python
-class Hunter(object):
-  def hunt(self):
-    print '{} is hunting.'.format(self.name)
+class Hunter(object):
+  def hunt(self):
+    print '{} is hunting.'.format(self.name)
 
-class Eagle(Carnivorous, Hunter):
+class Eagle(Carnivorous, Hunter):
   pass
 ```
 
@@ -132,16 +132,16 @@ class Eagle(Carnivorous, Hunter):
 **Polymorphisme**
 
 ```python
-class Giraffe(Animal):
-  def eat(self):
-    print 'Giraffe is eating'
+class Giraffe(Animal):
+  def eat(self):
+    print 'Giraffe is eating'
 
-class Eagle(Animal):
-  def eat(self):
-    print 'Eagle is eating'
+class Eagle(Animal):
+  def eat(self):
+    print 'Eagle is eating'
 
 animals = [Giraffe(), Eagle()]
-for a in animals:
+for a in animals:
   a.eat()
 ```
 
@@ -159,20 +159,20 @@ for a in animals:
 <br>
 
 ```python
-class Animal(object):
-  max_age = 200
-  def __init__(self, name):
-    self.name = name
-    self.age = 0
+class Animal(object):
+  max_age = 200
+  def __init__(self, name):
+    self.name = name
+    self.age = 0
 
-  @property
-  def age(self):
-    return self.__age
+  @property
+  def age(self):
+    return self.__age
 
-  @age.setter
-  def age(self, age):
-    if age <= Animal.max_age:
-      self.__age = age
+  @age.setter
+  def age(self, age):
+    if age <= Animal.max_age:
+      self.__age = age
     else:
       print '{} is too old!'.format(self.name)
 ```
@@ -184,10 +184,10 @@ class Animal(object):
 ```python
 a = Animal('Maya')
 
-a.age = 10
-print a.age  # 10
+a.age = 10
+print a.age  # 10
 
-a.age = 500  # Maya is too old!
+a.age = 500  # Maya is too old!
 print a.age  # 10
 ```
 

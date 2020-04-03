@@ -9,7 +9,7 @@
 
 ```python
 import os  # os.getcwd()
-from os import get_cwd  # getcwd()
+from os import get_cwd  # getcwd()
 from os import *  # getcwd()
 ```
 
