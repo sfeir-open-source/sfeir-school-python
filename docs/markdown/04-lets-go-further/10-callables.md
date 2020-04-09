@@ -6,7 +6,7 @@
 
 ##--##
 
-<br>
+<br><br>
 
 ```python
 class Animal(object):
@@ -23,7 +23,7 @@ class Animal(object):
 
 ##--##
 
-<br>
+<br><br>
 
 ```python
 a = Animal('Maya', 20)

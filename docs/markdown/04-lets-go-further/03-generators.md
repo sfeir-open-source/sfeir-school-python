@@ -135,9 +135,7 @@ Le mécanisme de “StopIteration” est automatique géré par la boucle
 
 ##--##
 
-<br>
-<br>
-<br>
+<br><br><br>
 
 ```python
 def repeater():
@@ -148,9 +146,7 @@ def repeater():
 
 ##--##
 
-<br>
-<br>
-<br>
+<br><br><br>
 
 ```python
 rp = repeater()

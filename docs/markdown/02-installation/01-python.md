@@ -2,7 +2,7 @@
 
 **Installation de Python 3.7+**
 
-* Bonne nouvelle : déjà installé sur la plupart des environnements Linux et macOS (mais en 2.7) !
+* Bonne nouvelle : déjà installé sur la plupart des environnements Linux et macOS (mais en 2.7)
 * Sinon : https://www.python.org/downloads/
 * Vérifier l’installation : `$ python --version`
 

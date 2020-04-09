@@ -67,7 +67,7 @@ Il y a beaucoup de façon en Python d’appliquer un format sur des chaînes, vo
 
 ##--##
 
-<br>
+<br><br>
 
 ```python
 a = 'ma chaine'
@@ -80,7 +80,7 @@ a[:]  # ma chaine
 
 ##--##
 
-<br>
+<br><br>
 
 ```python
 len(a)  # 9
@@ -96,7 +96,7 @@ a.count('a')  # 2
 
 ##--##
 
-<br>
+<br><br>
 
 ```python
 s = '字'
@@ -108,7 +108,7 @@ print s  #  字
 
 ##--##
 
-<br>
+<br><br>
 
 ```python
 w = s.decode('utf-8')

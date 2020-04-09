@@ -1,3 +1,3 @@
-<!-- .slide: class="transition-white sfeir-bg-red" sfeir-techno="Python-200" -->
+<!-- .slide: class="transition" sfeir-techno="Python-200" -->
 
 # Thank you

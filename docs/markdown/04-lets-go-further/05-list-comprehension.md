@@ -26,9 +26,7 @@ result = [x for x in iterable ... if condition ...]
 
 ##--##
 
-<br>
-<br>
-<br>
+<br><br><br>
 
 ```python
 letters = []
@@ -39,9 +37,7 @@ for letter in 'chaine':
 
 ##--##
 
-<br>
-<br>
-<br>
+<br><br><br>
 
 ```python
 print(letters)

@@ -19,7 +19,7 @@
 
 ##--##
 
-<br>
+<br><br>
 
 ```python
 class MyContextManager(object):
@@ -40,7 +40,7 @@ class MyContextManager(object):
 
 ##--##
 
-<br>
+<br><br>
 
 ```python
 # Before
@@ -64,7 +64,7 @@ class MyContextManager(object):
 
 ##--##
 
-<br>
+<br><br>
 
 ```python
 import os
@@ -83,7 +83,7 @@ class Cd(object):
 
 ##--##
 
-<br>
+<br><br>
 
 ```python
 # /home/user/project

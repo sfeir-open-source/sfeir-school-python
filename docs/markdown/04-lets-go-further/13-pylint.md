@@ -24,7 +24,7 @@
 
 ##--##
 
-<br>
+<br><br>
 
 ```python
 def main():
@@ -41,7 +41,7 @@ def main():
 
 ##--##
 
-<br>
+<br><br>
 
 ```python
 for func in list_of_printers:
@@ -63,7 +63,7 @@ W: 10,12: Cell variable i defined in loop (cell-var-from-loop)
 
 ##--##
 
-<br>
+<br><br>
 
 ```python
 def main():
@@ -83,7 +83,7 @@ def main():
 
 ##--##
 
-<br>
+<br><br>
 
 ```python
 for func in list_of_printers:
