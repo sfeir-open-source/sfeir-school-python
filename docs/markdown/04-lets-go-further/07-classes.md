@@ -109,7 +109,7 @@ class Carnivorous(Animal):
 
 ##--##
 
-<br>
+<br><br>
 
 ```python
 class Hunter(object):
@@ -121,6 +121,8 @@ class Eagle(Carnivorous, Hunter):
 ```
 
 ##--##
+
+<br><br>
 
 ![center h-600](./assets/images/class_diagram.png)
 
@@ -156,7 +158,7 @@ for a in animals:
 
 ##--##
 
-<br>
+<br><br>
 
 ```python
 class Animal(object):
@@ -179,7 +181,7 @@ class Animal(object):
 
 ##--##
 
-<br>
+<br><br>
 
 ```python
 a = Animal('Maya')
@@ -226,7 +228,7 @@ On peut accéder à une variable de classe avec une classmethod.
 
 ##--##
 
-<br>
+<br><br>
 
 ```python
 from datetime import date
@@ -246,7 +248,7 @@ class Animal(object):
 
 ##--##
 
-<br>
+<br><br>
 
 ```python
 a = Animal('Maya', 10)
@@ -291,7 +293,7 @@ age = Animal.get_age_from_year(2000)  # 18
 
 ##--##
 
-<br>
+<br><br>
 
 ```python
 from datetime import date
@@ -312,7 +314,7 @@ class Animal(object):
 
 ##--##
 
-<br>
+<br><br>
 
 ```python
 class Giraffe(Animal):
@@ -334,7 +336,7 @@ print isinstance(b, Giraffe)  # False
 
 ##--##
 
-<br>
+<br><br>
 
 ```python
 import time
@@ -349,7 +351,7 @@ class Animal(object):
 
 ##--##
 
-<br>
+<br><br>
 
 ```python
 g = Animal('Maya')
@@ -372,7 +374,7 @@ time.sleep(1)
 
 ##--##
 
-<br>
+<br><br>
 
 ```python
 class Animal(object):
@@ -392,7 +394,7 @@ class Animal(object):
 
 ##--##
 
-<br>
+<br><br>
 
 ```python
 a = Animal('Maya', 20)
@@ -418,7 +420,7 @@ print [a, b]
 
 ##--##
 
-<br>
+<br><br>
 
 ```python
 class Animal(object):
@@ -448,7 +450,7 @@ class Animal(object):
 
 ##--##
 
-<br>
+<br><br>
 
 ```python
 a = Animal('Maya', 10)
@@ -471,7 +473,7 @@ N.B. : il est également possible de surcharger les opérateurs de comparaison.
 
 ##--##
 
-<br>
+<br><br>
 
 ```python
 class Animal(object):
@@ -494,7 +496,7 @@ class Animal(object):
 
 ##--##
 
-<br>
+<br><br>
 
 ```python
 a = Animal('Maya', 2)
@@ -515,7 +517,7 @@ print l[a]  # 30
 
 ##--##
 
-<br>
+<br><br>
 
 ```python
 class Animal(object):
@@ -537,7 +539,7 @@ class Animal(object):
 
 ##--##
 
-<br>
+<br><br>
 
 ```python
 a = Animal('Maya', 2)
@@ -562,7 +564,7 @@ del a.eat  # Deleting eat...
 
 ##--##
 
-<br>
+<br><br>
 
 ```python
 class Animal(object):
@@ -588,14 +590,14 @@ class Animal(object):
 
   def __reversed__(self):
     return reversed(self.other_names)
-    
+
   def __contains__(self, key):
     return key in self.other_names
 ```
 
 ##--##
 
-<br>
+<br><br>
 
 ```python
 a = Animal('Maya', 2, 'Jojo', 'Yoyo', 'Bobo')
