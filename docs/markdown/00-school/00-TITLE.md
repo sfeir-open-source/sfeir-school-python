@@ -1,6 +1,6 @@
 <!-- .slide: class="first-slide" sfeir-level="2" sfeir-techno="python" -->
 
-# **Welcome to Sfeir School**
+# **Welcome to SFEIR School**
 
 ## **Python 200**
 
