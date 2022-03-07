@@ -1,7 +1,7 @@
 {
   "name": "sfeirschoolpython",
   "version": "1.0.0",
-  "description": "Sfeir School Python with revealJS",
+  "description": "SFEIR School Python with revealJS",
   "main": "index.js",
   "scripts": {
     "sass": "node-sass ./scss/slides.scss -o ./css/ --source-map=true --watch=\"scss\" --recursive=\"scss\"",
