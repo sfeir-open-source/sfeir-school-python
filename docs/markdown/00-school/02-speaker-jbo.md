@@ -4,7 +4,7 @@
 
 ![speaker](./assets/images/speakers/sni.png)
 
-<h2> Sylvain <span> Nieuwlandt</span></h2>
+<h2> Julien <span> Bouquet</span></h2>
 
 ### Cloud Developer
 
