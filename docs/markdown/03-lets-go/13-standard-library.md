@@ -12,19 +12,21 @@
 
 
 ```python
-import os
+from os import listdir, path
 
-list_files: list[str] = os.listdir(folder)
-for file in files: 
-    reader = os.open(file, "rt")
-    line = reader.readlines()
+folder = "folder"
+list_files: list[str] = listdir(folder) # List file and folder in specific path (here relative path)
+for file_name in list_files: 
+    file_path = path.join(folder, file_name) # Concat path of folder and file_name with "/"
+    file = open(file_path, mode='r')
+    # Reading the file line by line.
+    line = file.readlines() # Read line one by one
     while line:
         print(line)
-    os.close(file)
-    
-```
+        line = file.readline()
+    file.close() # Close file
 
-<!-- .element: class="big-code" -->
+```
 
 
 ##==##
@@ -37,17 +39,13 @@ for file in files:
 
 * Librarie permettant de manipuler les regex:
 
-# TODO valid it 
 ```python
-import re
-
 str = "string"
 regex_filter = r"^[a-z]" # Match la première lettre
 
 match = re.search(regex_filter, str)
 if match:
-    return match.group(0) # return s
-    
+    print(match.group(0)) # return s
 ```
 
 ##==##
@@ -60,7 +58,6 @@ if match:
 
 * Librarie permettant de manipuler l'ecosystem python:
 
-# TODO valid it 
 ```python
 # main.py
 import sys
@@ -72,5 +69,3 @@ print(f"Args used {sys.argv[1]}, {sys.argv[2]}")
 ```bash
 python3 main.py "test1" "test2" # Output Args used test1 test2
 ```
-
-# TODO add exercice and correction

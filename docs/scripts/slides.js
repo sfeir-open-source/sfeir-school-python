@@ -44,18 +44,17 @@ function letsGoSlides() {
     '03-lets-go/11-packages.md',
     '03-lets-go/12-imports.md',
     '03-lets-go/13-standard-library.md',
-    '03-lets-go/14-hints.md',
-    '03-lets-go/15-generators.md',
-    '03-lets-go/16-decorators.md',
-    '03-lets-go/17-lambdas.md',
+    '03-lets-go/14-step-02.md'
   ];
 }
 
 function letsGoFurtherSlides() {
   return [
     '04-lets-go-further/00-TITLE.md',
-    '04-lets-go-further/02-step-04.md',
-    '04-lets-go-further/04-step-05.md',
+    '04-lets-go-further/01-hints.md',
+    '04-lets-go-further/02-generators.md',
+    '04-lets-go-further/03-decorators.md',
+    '04-lets-go-further/04-lambdas.md',
     '04-lets-go-further/05-list-comprehension.md',
     '04-lets-go-further/06-step-06.md',
     '04-lets-go-further/07-classes.md',

@@ -1,6 +1,5 @@
 <!-- .slide: -->
-# Keep in section lets go ?
-# Pour aller plus loin - 13
+# Pour aller plus loin - 01
 
 **Les Hints**
 
@@ -9,7 +8,7 @@
 ##==##
 <!-- .slide: class="with-code" -->
 
-# Pour aller plus loin - 13
+# Pour aller plus loin - 01
 
 **Les Hint**
 
@@ -31,7 +30,7 @@ def is_palindrome(s: str) -> bool:
 <!-- .element: class="big-code" -->
 ##==##
 
-# Pour aller plus loin - 13
+# Pour aller plus loin - 01
 
 **Les Hint**
 
@@ -63,5 +62,3 @@ def is_palindrome(s: str | None = None) -> bool:
 Notes:
 Permet a l'IDE de connaitre le type attendu. Affiche un warning si le type n'est pas string ou si s peut être null.
 Les hints viennent de la librairie standard typing
-##==##
-<!-- .slide: -->

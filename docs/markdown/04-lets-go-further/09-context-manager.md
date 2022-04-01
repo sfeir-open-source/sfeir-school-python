@@ -24,18 +24,10 @@
 ```python
 class MyContextManager(object):
   def __enter__(self):
-    print 'Before'
+    print("Before")
 
-  def __exit__(
-    self,
-    type,
-    value,
-    traceback
-  ):
-    print 'After'
-    print type
-    print value
-    print traceback
+  def __exit__(self):
+    print("After")
 ```
 
 ##--##
@@ -43,16 +35,12 @@ class MyContextManager(object):
 <br><br>
 
 ```python
-# Before
-# After
+with MyContextManager():
+  print("func")
 
-# <type 'exceptions.Exception'>
-# Oups
-# <traceback object at 0x1047a4128>
-# Traceback (most recent call last):
-#   File "example.py", line 12, in <module>
-#     raise Exception('Oups')
-# Exception: Oups
+# Before
+# func
+# After
 ```
 
 ##==##
@@ -65,38 +53,30 @@ class MyContextManager(object):
 ##--##
 
 <br><br>
+Sans context manager: 
 
 ```python
 import os
 
-class Cd(object):
-  def __init__(self, dir_name):
-    self.dir_name = dir_name
-
-  def __enter__(self):
-    self.current_dir = os.getcwd()
-    os.chdir(self.dir_name)
-
-  def __exit__(self, type, value, traceback):
-    os.chdir(self.current_dir)
+file = open(file_path, mode='r')
+# Reading the file line by line.
+line = file.readlines() # Read line one by one
+while line:
+    print(line)
+    line = file.readline()
+file.close() # Close file
 ```
 
 ##--##
 
 <br><br>
 
+Avec context manager: 
 ```python
-# /home/user/project
-
-with Cd('/tmp'):
-  # /tmp
-
-  with Cd('/tmp/foo'):
-    # /tmp/foo
-    pass
-
-  # /tmp
-
-# /home/user/project
+with open(file_path, mode='r') as file: # Open and Close file
+  # Reading the file line by line.
+  line = file.readlines() # Read line one by one
+  while line:
+    print(line)
+    line = file.readline()
 ```
-# TODO add example with OS 

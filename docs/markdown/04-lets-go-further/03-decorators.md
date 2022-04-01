@@ -1,6 +1,6 @@
 <!-- .slide: -->
 
-# Pour aller plus loin - 15
+# Pour aller plus loin - 03
 
 **Les décorateurs**
 
@@ -21,7 +21,7 @@ Modularité : permet d’organiser son code en conséquence et de le partager ai
 ##==##
 <!-- .slide: class="with-code" -->
 
-# Pour aller plus loin - 15
+# Pour aller plus loin - 03
 
 **Les décorateurs**
 
@@ -46,7 +46,7 @@ Le wrapper : fonction qui enveloppe généralement la fonction initiale
 ##==##
 <!-- .slide: class="with-code" -->
 
-# Pour aller plus loin - 15
+# Pour aller plus loin - 03
 
 **Les décorateurs**
 
@@ -66,7 +66,7 @@ mon_decorateur(is_palindrome)()  # sans le décorateur
 ##==##
 <!-- .slide: class="with-code" -->
 
-# Pour aller plus loin - 15
+# Pour aller plus loin - 03
 
 **Les décorateurs**
 
@@ -88,7 +88,7 @@ def mon_decorateur(func):
 ##==##
 <!-- .slide: class="with-code" -->
 
-# Pour aller plus loin - 15
+# Pour aller plus loin - 03
 
 **Les décorateurs**
 
@@ -110,7 +110,7 @@ def mon_super_decorateur(call=True):
 ##==##
 <!-- .slide: class="with-code" -->
 
-# Pour aller plus loin - 15
+# Pour aller plus loin - 03
 
 **Les décorateurs**
 
@@ -132,6 +132,3 @@ mon_super_decorateur(True)(is_palindrome)()
 ```
 
 <!-- .element: class="big-code" -->
-
-##==##
-<!-- .slide: class="with-code" -->

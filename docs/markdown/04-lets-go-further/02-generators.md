@@ -1,6 +1,6 @@
 <!-- .slide: -->
 
-# Pour aller plus loin - 14
+# Pour aller plus loin - 02
 
 **Le générateur**
 
@@ -14,7 +14,7 @@
 ##==##
 <!-- .slide: class="with-code" -->
 
-# Pour aller plus loin - 14
+# Pour aller plus loin - 02
 
 **Le générateur**
 
@@ -32,7 +32,7 @@ def simple_generator():
 ##==##
 <!-- .slide: -->
 
-# Pour aller plus loin - 14
+# Pour aller plus loin - 02
 
 **Le générateur**
 
@@ -56,7 +56,7 @@ Generally, it is simpler to write than list generating functions.
 ##==##
 <!-- .slide: -->
 
-# Pour aller plus loin - 14
+# Pour aller plus loin - 02
 
 **Le générateur**
 
@@ -77,7 +77,7 @@ Generators are not indexable, which means that simple_generator_function[2] will
 ##==##
 <!-- .slide: class="with-code" -->
 
-# Pour aller plus loin - 14
+# Pour aller plus loin - 02
 
 **Le générateur**
 
@@ -106,7 +106,7 @@ Generators are not indexable, which means that simple_generator_function[2] will
 ##==##
 <!-- .slide: class="with-code" -->
 
-# Pour aller plus loin - 14
+# Pour aller plus loin - 02
 
 **Le générateur**
 
@@ -123,35 +123,3 @@ list(simple_generator())
 
 Notes:
 Le mécanisme de “StopIteration” est automatique géré par la boucle
-
-##==##
-<!-- .slide: class="with-code two-column-layout" -->
-
-# Pour aller plus loin - 14
-
-**La coroutine**
-
-* C’est une fonction qui peut à la fois recevoir et produire de la donnée.
-
-##--##
-
-<br><br><br>
-
-```python
-def repeater():
-  while True:
-    received = yield
-    print('Echo:', received)
-```
-
-##--##
-
-<br><br><br>
-
-```python
-rp = repeater()
-
-next(rp) # Start the coroutine
-rp.send('Hello')  # Echo: Hello
-rp.send('world!')  # Echo: world!
-```

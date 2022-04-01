@@ -1,20 +1,11 @@
-# -*- coding: utf-8 -*-
+import sys
 
-"""
-To-Do application
-"""
+MODE_READ = "r"
+MODE_APPEND = "a"
 
-def main(s: str):
-    match s:
-        case True:
-            print("toto")
-        case False:
-            print("tata")
-        case _:
-            print("default")
+def main():
+    input_file_path = "folder/input.txt"
+    output_file_path = "folder/output.txt"
 
-
-if __name__ == '__main__':
-    main("tata")
-    main("toto")
-    main("other")
+if __name__ == "__main__":
+    main()
