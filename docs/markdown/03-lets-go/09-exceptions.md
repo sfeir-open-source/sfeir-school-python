@@ -1,6 +1,6 @@
 <!-- .slide: -->
 
-# Les bases - 09
+# Les bases - 08
 
 **Les exceptions**
 
@@ -15,7 +15,7 @@
 ##==##
 <!-- .slide: -->
 
-# Les bases - 09
+# Les bases - 08
 
 **Les exceptions**
 
@@ -31,7 +31,7 @@
 ##==##
 <!-- .slide: class="with-code" -->
 
-# Les bases - 09
+# Les bases - 08
 
 **Les exceptions**
 
@@ -52,7 +52,7 @@ class MyCustomException(Exception):
 ##==##
 <!-- .slide: class="with-code" -->
 
-# Les bases - 09
+# Les bases - 08
 
 **Les exceptions**
 

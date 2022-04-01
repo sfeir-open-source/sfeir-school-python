@@ -1,6 +1,6 @@
 <!-- .slide: -->
 
-# Pour aller plus loin - 12
+# Pour aller plus loin - 14
 
 **Le générateur**
 
@@ -14,7 +14,7 @@
 ##==##
 <!-- .slide: class="with-code" -->
 
-# Pour aller plus loin - 12
+# Pour aller plus loin - 14
 
 **Le générateur**
 
@@ -32,7 +32,7 @@ def simple_generator():
 ##==##
 <!-- .slide: -->
 
-# Pour aller plus loin - 12
+# Pour aller plus loin - 14
 
 **Le générateur**
 
@@ -56,7 +56,7 @@ Generally, it is simpler to write than list generating functions.
 ##==##
 <!-- .slide: -->
 
-# Pour aller plus loin - 12
+# Pour aller plus loin - 14
 
 **Le générateur**
 
@@ -77,7 +77,7 @@ Generators are not indexable, which means that simple_generator_function[2] will
 ##==##
 <!-- .slide: class="with-code" -->
 
-# Pour aller plus loin - 12
+# Pour aller plus loin - 14
 
 **Le générateur**
 
@@ -106,7 +106,7 @@ Generators are not indexable, which means that simple_generator_function[2] will
 ##==##
 <!-- .slide: class="with-code" -->
 
-# Pour aller plus loin - 12
+# Pour aller plus loin - 14
 
 **Le générateur**
 
@@ -127,7 +127,7 @@ Le mécanisme de “StopIteration” est automatique géré par la boucle
 ##==##
 <!-- .slide: class="with-code two-column-layout" -->
 
-# Pour aller plus loin - 12
+# Pour aller plus loin - 14
 
 **La coroutine**
 

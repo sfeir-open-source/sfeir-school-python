@@ -1,6 +1,6 @@
 <!-- .slide: -->
 
-# Les bases - 08
+# Les bases - 07
 
 **Les boucles**
 
@@ -12,7 +12,7 @@
 ##==##
 <!-- .slide: class="with-code" -->
 
-# Les bases - 08
+# Les bases - 07
 
 **Les boucles**
 
@@ -34,7 +34,7 @@ Range renvoie une liste => itérable
 ##==##
 <!-- .slide: class="with-code" -->
 
-# Les bases - 08
+# Les bases - 07
 
 **Les boucles**
 

@@ -2,16 +2,8 @@
 
 # **Welcome to SFEIR School**
 
-## **Python 200**
+## **Python**
 
-##==##
-
-<!-- .slide: class="school-presentation" -->
-
-<div class="wifi">
-  <span class="key">wifi:</span><span>SSID</span><br>
-  <span class="key">mdp:</span><span>PWD_WIFI</span>
-</div>
 
 ##==##
 
@@ -24,6 +16,6 @@ Tour de table ...
 </p>
 <br><br>
 
-**Feuille de présence (obligatoire)**
+<!-- **Feuille de présence (obligatoire)** --> 
 
 <!-- .element: class="center" -->

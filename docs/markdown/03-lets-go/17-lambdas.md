@@ -1,6 +1,6 @@
 <!-- .slide: class="with-code" -->
 
-# Les bases - 05
+# Pour aller plus loin - 16
 
 **Les lambdas**
 
@@ -23,7 +23,7 @@ get_xy('12.345 -6.789')  # (12.345, -6.789)
 ##==##
 <!-- .slide: class="with-code" -->
 
-# Les bases - 05
+# Pour aller plus loin - 16
 
 **Les lambdas**
 

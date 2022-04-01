@@ -32,7 +32,7 @@ def is_palindrome(s):
 
 <br>
 
-* Python est un langage non typé.
+* Python est un langage non typé (mais il existe des hints pour la lisbilité du code).
 
 ##==##
 <!-- .slide: class="with-code" -->
