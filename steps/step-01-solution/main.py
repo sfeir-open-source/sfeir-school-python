@@ -15,7 +15,10 @@ def main():
     Main function
     """
     concat("input_1", "input_2")
-    concat(1, "input_2")
+    try:
+        concat(1, "input_2")
+    except Exception:
+        pass
     concat(["a"], ["b"])
 
 

@@ -13,4 +13,3 @@
 Notes:
 Package = ensemble de modules
 
-Fichier __init__.py facultatif en Python3
