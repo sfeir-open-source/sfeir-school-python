@@ -2,7 +2,7 @@
 
 # Présentation
 
-![speaker](./assets/images/speakers/sni.png)
+![speaker](./assets/images/speakers/jbo.png)
 
 <h2> Julien <span> Bouquet</span></h2>
 
@@ -10,4 +10,4 @@
 
 <!-- .element: class="icon-rule icon-first" -->
 
-![company](./assets/images/logo_sfeir_bleu_orange.png)
+![company](./assets/images/logo_sfeir_blanc.png)

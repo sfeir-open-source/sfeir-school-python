@@ -61,11 +61,9 @@ function letsGoFurtherSlides() {
     '04-lets-go-further/08-step-07.md',
     '04-lets-go-further/09-context-manager.md',
     '04-lets-go-further/10-callables.md',
-    '04-lets-go-further/11-step-08.md',
     '04-lets-go-further/12-code-conventions.md',
     '04-lets-go-further/13-pylint.md',
-    '04-lets-go-further/14-unit-tests.md',
-    '04-lets-go-further/15-step-09.md',
+    '04-lets-go-further/14-unit-tests.md'
   ];
 }
 
