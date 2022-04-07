@@ -30,6 +30,7 @@ def is_palindrome(s):
 
 Notes:
 Range renvoie une liste => itérable
+range(start, stop not included, step)
 
 ##==##
 <!-- .slide: class="with-code" -->

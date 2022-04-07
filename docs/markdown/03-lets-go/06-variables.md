@@ -1,4 +1,4 @@
-<!-- .slide: -->
+<!-- .slide: class="with-code" -->
 
 # Les bases - 05
 
