@@ -1,14 +1,20 @@
-# Python 200
+# SFEIR School Python
 
-A [SFEIR School](https://www.sfeir.com/formation/school/)
+<p align="center">
+ <img style="display:block" width="20%" height="20%" src="./docs/assets/images/sfeir-school-logo.png" alt="SFEIR School logo">
+</p>
 
-![logo](https://www.sfeir.com/img/school/formations/Python%20200.png)
+<br/>
 
-[Planning, trainers and other details](https://www.sfeir.com/school/python-200/)
+[Discover the SFEIR Schools](https://www.sfeir.com/fr/contenus-dexperts/sfeir-school)
 
 # Slides
 
 You can view the slides [here](https://sfeir-open-source.github.io/sfeir-school-python/).
+
+## Develop
+
+To run docs locally, go in directory `docs` and run `npx serve` of if you don't have node, you can use docker `docker-compose up`, and open slides on http://localhost:3000/.
 
 # Steps
 

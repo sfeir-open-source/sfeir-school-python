@@ -1,116 +1,28 @@
-# -*- coding: utf-8 -*-
-
-"""
-To-Do application
-"""
-
-import os
-
-DONE = '✔'
-
-
-def add(todos):
-    """
-    Add a task
-    """
-    task = input('\nNew task: ')
-    todos.append({
-        'task': task,
-        'done': False
-    })
-
-def clear():
-    """
-    Clear the terminal
-    """
-    os.system('cls' if os.name == 'nt' else 'clear')
-
-def delete(todos, index=None):
-    """
-    Delete one or all tasks
-    """
-    if index is not None:
-        del todos[index]
-    else:
-        del todos[:]
-
-def get_printable_todos(todos):
-    """
-    Get formatted tasks
-    """
-    printable_todos = []
-
-    for todo in todos:
-        if todo['done']:
-            printable_todos.append('{} {}'.format(DONE, todo['task']))
-        else:
-            printable_todos.append('  {}'.format(todo['task']))
-
-    return printable_todos
-
-def toggle_done(todos, index):
-    """
-    Toggle a task
-    """
-    todos[index]['done'] = not todos[index]['done']
-
-def view(todos, index):
-    """
-    Print tasks
-    """
-    clear()
-    entries = get_printable_todos(todos)
-
-    print('\nTo-Do list')
-    print('=' * 40)
-
-    for idx, entry in enumerate(entries):
-        tick = '  '
-
-        if index is not None and idx == index:
-            tick = '> '
-
-        print('{} {}'.format(tick, entry))
-
+import sys
 
 def main():
-    """
-    Main function
-    """
-    choice = None
-    index = 0
-    todos = []
+    input_file_path = "folder/input.txt"
+    output_file_path = "folder/output.txt"
+    if len(sys.argv) > 1:
+        # Open files
+        input_file = open(input_file_path, mode='r')
+        output_file = open(output_file_path, mode='a')
+        txt_found_in_file = False
+        # Input Args
+        input_txt = sys.argv[1]
+        # Read lines
+        for line in input_file:
+            if input_txt in line:
+                txt_found_in_file = True
+        # If input is not in input file
+        if not txt_found_in_file:
+            # Write line
+            output_file.writelines(f"{input_txt}\n")
 
-    while choice != 'q':
-        view(todos, index)
-
-        print('\n' + '=' * 40 + '\n')
-        print('Previous/Next: p/n\n')
-
-        print('1. Add')
-        print('2. Toggle done')
-        print('3. Delete')
-        print('4. Delete all')
-        print('q. Quit')
-
-        choice = input('\nAction: ')
-
-        if choice == '1':
-            add(todos)
-        elif choice == '2':
-            toggle_done(todos, index)
-        elif choice == '3':
-            delete(todos, index)
-            index = 0
-        elif choice == '4':
-            delete(todos)
-            index = 0
-
-        elif choice == 'n' and index < len(todos)-1:
-            index += 1
-        elif choice == 'p' and index > 0:
-            index -= 1
+        # Close files
+        input_file.close() 
+        output_file.close()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

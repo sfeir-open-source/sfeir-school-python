@@ -6,7 +6,7 @@ Interpréteur Python :
 
 * Façon la plus rapide de tester du code
 * Lancement par `python3` (sans paramètre) en ligne de commande
-* quit(), help(‘function or lib’), dir(‘type or lib’)
+* `quit()`, `help(‘function or lib’)`, `dir(‘type or lib’)`
 
 Notes:
 Comme on le disait plus tôt, Python est un langage interprété, par conséquent il dispose d’un moteur d’exécution. Vous pouvez accéder directement à ce moteur en tapant juste “python3” dans votre terminal.Cela démarrera un interpreteur REPL (Read, Eval, Print, Loop) Python qui attendra vos inputs pour les évaluer (à noter, un interpréteur à une session courante dans laquelle il va stocker l’historique de vos commandes ainsi que les fonctions, types ou variable que vous avez créé précédement.

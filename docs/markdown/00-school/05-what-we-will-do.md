@@ -18,10 +18,10 @@ En récupérant ce repository, vous remarquerez que vous avez un dossier par ét
 
 # Déroulement de la formation
 
-* Un concept clé de Python.
+* Des concept clé de Python.
 * Un TP :
   * un dossier d’exercice : step-XX
   * un dossier de solution : step-XX-solution
 
 Notes:
-Chaque étape se déroulera de la même manière, nous verrons ensemble un concept clé de Python, puis nous le mettrons en pratique dans un dossier d’exercice correspondant.
+Chaque étape se déroulera de la même manière, nous verrons ensemble des concepts clé de Python, puis nous le mettrons en pratique dans un dossier d’exercice correspondant.

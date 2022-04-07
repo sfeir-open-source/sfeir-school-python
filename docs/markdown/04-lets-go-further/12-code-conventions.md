@@ -1,6 +1,6 @@
 <!-- .slide: -->
 
-# Bonnes pratiques - 15
+# Pour aller plus loin - 10
 
 **Les bonnes pratiques - convention de nommage**
 
@@ -15,7 +15,7 @@
 ##==##
 <!-- .slide: -->
 
-# Bonnes pratiques - 15
+# Pour aller plus loin - 10
 
 **Les bonnes pratiques - disposition du code**
 
@@ -29,7 +29,7 @@
 ##==##
 <!-- .slide: -->
 
-# Bonnes pratiques - 15
+# Pour aller plus loin - 10
 
 **Les bonnes pratiques - disposition du code**
 
@@ -44,7 +44,7 @@
 ##==##
 <!-- .slide: -->
 
-# Bonnes pratiques - 15
+# Pour aller plus loin - 10
 
 **Les bonnes pratiques - disposition du code**
 
@@ -57,7 +57,7 @@
 ##==##
 <!-- .slide: class="with-code" -->
 
-# Bonnes pratiques - 15
+# Pour aller plus loin - 10
 
 **Les bonnes pratiques - documentation**
 
@@ -96,7 +96,7 @@ Commentaire (bloc ou ligne) : utile pour les détails d’implémentation.
 ##==##
 <!-- .slide: -->
 
-# Bonnes pratiques - 15
+# Pour aller plus loin - 10
 
 **Les bonnes pratiques - conventions de nommage**
 
@@ -113,7 +113,7 @@ Commentaire (bloc ou ligne) : utile pour les détails d’implémentation.
 ##==##
 <!-- .slide: -->
 
-# Bonnes pratiques - 15
+# Pour aller plus loin - 10
 
 **Les bonnes pratiques - programmation**
 

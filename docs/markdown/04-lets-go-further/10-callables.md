@@ -1,6 +1,6 @@
 <!-- .slide: class="with-code two-column-layout" -->
 
-# Orienté Objet - 14
+# Pour aller plus loin - 08
 
 **Les classes - callable (comme une fonction)**
 
@@ -15,10 +15,10 @@ class Animal(object):
     self.age = age
 
   def __call__(self):
-    print 'Hello {} ({} years old)!'.format(
+    print('Hello {} ({} years old)!'.format(
       self.name,
       self.age
-    )
+    ))
 ```
 
 ##--##
