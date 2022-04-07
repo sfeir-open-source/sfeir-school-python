@@ -89,6 +89,13 @@ async def get_all_messages_from_author(author, response: Response) -> [MessageGe
 
 @app.get("/stats")
 async def get_messages_stats(response: Response) -> [AuthorStats]:
+    """
+    It's up to you but here are some ideas :
+    - min, max and average length of message
+    - min, max and average number of messages per author
+    - min, max and average number of messages per day or hour
+    - etc
+    """
     response.status_code = 501
 
 
