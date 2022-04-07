@@ -1,7 +1,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div>
-<h2 align="center">SFEIR School Python</h2>
+<h2 align="center">SFEIR School Python - FastAPI</h2>
 </div>
 
 ### Installation des dépendances
