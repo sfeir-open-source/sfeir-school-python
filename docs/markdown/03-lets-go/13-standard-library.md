@@ -30,7 +30,7 @@ for file_name in list_files:
 
 
 ##==##
-
+<!-- .slide: class="with-code" -->
 # Les bases - 12
 
 **Les Librairies standard**
@@ -40,6 +40,7 @@ for file_name in list_files:
 * Librarie permettant de manipuler les regex:
 
 ```python
+import re
 str = "string"
 regex_filter = r"^[a-z]" # Match la première lettre
 
@@ -47,9 +48,10 @@ match = re.search(regex_filter, str)
 if match:
     print(match.group(0)) # return s
 ```
+<!-- .element: class="big-code" -->
 
 ##==##
-
+<!-- .slide: class="with-code" -->
 # Les bases - 12
 
 **Les Librairies standard**
@@ -65,7 +67,9 @@ import sys
 print(f"Args used {sys.argv[1]}, {sys.argv[2]}")
     
 ```
+<!-- .element: class="big-code" -->
 
 ```bash
 python3 main.py "test1" "test2" # Output Args used test1 test2
 ```
+<!-- .element: class="big-code" -->

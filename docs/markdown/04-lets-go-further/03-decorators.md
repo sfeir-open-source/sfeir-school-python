@@ -30,9 +30,9 @@ Modularité : permet d’organiser son code en conséquence et de le partager ai
 ```python
 def mon_decorateur(func):
   def wrapper():
-    print 'avant'
+    print('avant')
     res = func()
-    print 'après'
+    print('après')
 
     return res
   return wrapper
@@ -75,9 +75,9 @@ mon_decorateur(is_palindrome)()  # sans le décorateur
 ```python
 def mon_decorateur(func):
   def wrapper(*args, **kwargs):
-    print 'avant'
+    print('avant')
     res = func(*args, **kwargs)
-    print 'après'
+    print('après')
 
     return res
   return wrapper

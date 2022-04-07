@@ -15,10 +15,10 @@ class Animal(object):
     self.age = age
 
   def __call__(self):
-    print 'Hello {} ({} years old)!'.format(
+    print('Hello {} ({} years old)!'.format(
       self.name,
       self.age
-    )
+    ))
 ```
 
 ##--##

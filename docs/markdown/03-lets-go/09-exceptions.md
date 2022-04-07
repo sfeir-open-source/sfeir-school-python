@@ -59,15 +59,12 @@ class MyCustomException(Exception):
 ```python
 try:
   return animals[100 / i]
-
 except (IndexError, ZeroDivisionError):
   return None
-
 except KeyError:
   pass  # "animals" is a dict?
-  
 finally:
-  print 'always executed'
+  print('always executed')
 ```
 
 <!-- .element: class="big-code" -->

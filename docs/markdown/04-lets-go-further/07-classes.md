@@ -19,10 +19,10 @@
 ```python
 class Giraffe(object):
   def drink(self):
-    print 'The giraffe is drinking.'
+    print('The giraffe is drinking.')
 
   def eat(self):
-    print 'The giraffe is eating.'
+    print('The giraffe is eating.')
 
 maya = Giraffe()
 maya.drink()
@@ -44,10 +44,10 @@ class Giraffe(object):
     self.name = name
 
   def drink(self):
-    print '{} is drinking.'.format(self.name)
+    print('{} is drinking.'.format(self.name))
 
   def eat(self):
-    print '{} is eating.'.format(self.name)
+    print('{} is eating.'.format(self.name))
 
 maya = Giraffe('Maya')
 ```
@@ -67,14 +67,14 @@ class Animal(object):
     self.name = name
 
   def drink(self):
-    print '{} is drinking.'.format(self.name)
+    print('{} is drinking.'.format(self.name))
 
   def eat(self):
-    print '{} is eating.'.format(self.name)
+    print('{} is eating.'.format(self.name))
 
 class Giraffe(Animal): 
   def eat_leaves(self):
-    print '{} is eating some leaves.'.format(self.name)
+    print('{} is eating some leaves.'.format(self.name))
 ```
 
 <!-- .element: class="big-code" -->
@@ -109,7 +109,7 @@ class Animal(object):
     if age <= Animal.max_age:
       self.__age = age
     else:
-      print '{} is too old!'.format(self.name)
+      print('{} is too old!'.format(self.name))
 ```
 
 ##--##
@@ -120,10 +120,10 @@ class Animal(object):
 a = Animal('Maya')
 
 a.age = 10
-print a.age  # 10
+print(a.age)  # 10
 
 a.age = 500  # Maya is too old!
-print a.age  # 10
+print(a.age)  # 10
 ```
 
 ##==##
@@ -140,7 +140,7 @@ class Animal(object):
     self.name = name
   @classmethod
   def display_max_age(cls):
-    print 'Animal max age is: {}'.format(cls.max_age)
+    print('Animal max age is: {}'.format(cls.max_age))
 
 g = Animal('Maya')
 g.display_max_age()
@@ -212,10 +212,10 @@ class Giraffe(Animal):
   pass
 
 a = Giraffe.from_year('Maya', 2017)
-print isinstance(a, Giraffe)  # True
+print(isinstance(a, Giraffe))  # True
 
 b = Giraffe.from_name('Maya')
-print isinstance(b, Giraffe)  # False
+print(isinstance(b, Giraffe))  # False
 ```
 
 ##==##
@@ -253,12 +253,12 @@ class Animal(object):
 a = Animal('Maya', 20)
 b = Animal('Jojo', 100)
 
-print a
+print(a)
 # Avant  <__main__.Animal object at 0x103476bd0>
 
 # Apres - Maya: 20 years old
 
-print [a, b]
+print([a, b])
 # Avant - [<__main__.Animal object at 0x103476bd0>, <__main__.Animal object at 0x103476c10>]
 
 # Apres - [Animal('Maya', 20), Animal('Jojo', 100)]
@@ -309,9 +309,9 @@ class Animal(object):
 a = Animal('Maya', 10)
 b = Animal('Jojo', 20)
 
-print a  # Maya: 10 years old
-print b  # Jojo: 20 years old
-print a + b  # Maya + Jojo: 30 years old
+print(a)  # Maya: 10 years old
+print(b)  # Jojo: 20 years old
+print(a + b)  # Maya + Jojo: 30 years old
 ```
 
 Notes:
@@ -335,10 +335,10 @@ class Animal(object):
     self.age = age
 
   def __float__(self):
-      return float(self.age)
+    return float(self.age)
 
   def __index__(self):
-      return int(self.age)
+    return int(self.age)
 
   def __int__(self):
     return self.age
@@ -355,8 +355,8 @@ class Animal(object):
 a = Animal('Maya', 2)
 l = [10, 20, 30, 40, 50]
 
-print int(a)  # 2
-print float(a)  # 2.0
-print str(a)  # Maya
-print l[a]  # 30
+print(int(a))  # 2
+print(float(a))  # 2.0
+print(str(a))  # Maya
+print(l[a])  # 30
 ```

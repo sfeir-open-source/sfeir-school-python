@@ -114,7 +114,7 @@ Generators are not indexable, which means that simple_generator_function[2] will
 
 ```python
 for i in simple_generator():
-  print i
+  print(i)
 
 list(simple_generator())
 ```

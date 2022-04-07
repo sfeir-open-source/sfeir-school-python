@@ -73,22 +73,27 @@ is_positive = True if value >= 0 else False
 
 <!-- .element: class="big-code" -->
 
+##==##
+<!-- .slide: class="with-code" -->
 # Les bases - 06
 
 **Les conditions**
 
-* Depuis python3.10, il est possible de faire un "switch-case" 
-* Celaa fait une égalité strict entre `input_str` et la condition
+* Depuis Python 3.10, il est possible de faire un "switch-case" 
+* Cela fait une égalité stricte entre `input_str` et la condition
 
 ```python
- match input_str:
-    case "c1" | "c2":
-        print("c1 or c2")
+match status:
+    case 400:
+        print("Bad request")
+    case 401 | 403 | 404:
+        print("Not allowed")
+    case 418:
+        print("I'm a teapot")
     case _:
-        print("c3")
-
+        print("Something's wrong with the internet")
 ```
 
-
+<!-- .element: class="big-code" -->
 Notes:
 Pas de switch => possibilité de faire une seule ligne en cas d’assignation ou autre.

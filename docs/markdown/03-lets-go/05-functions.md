@@ -105,7 +105,7 @@ def get_xy(s):
 
 ```python
 def myFunc(*args, **kwargs):
-  print args, kwargs
+  print(args, kwargs)
 
 myFunc(42, 'hello', param='world')
 # args: (42, 'hello')

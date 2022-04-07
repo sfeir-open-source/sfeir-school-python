@@ -7,10 +7,9 @@
 
 ##==##
 <!-- .slide: class="with-code" -->
-
 # Pour aller plus loin - 01
 
-**Les Hint**
+**Les Hints**
 
 * Un exemple sans hint :
 
@@ -29,27 +28,22 @@ def is_palindrome(s: str) -> bool:
 
 <!-- .element: class="big-code" -->
 ##==##
-
+<!-- .slide: class="with-code" -->
 # Pour aller plus loin - 01
 
-**Les Hint**
-
-- Si s peut être vide
+**Les Hints**
 
 ### Python 3.9
 ```python
-
 def is_palindrome(s: Optional[str] = None) -> bool:
   if s is None:
     return False
   return s == s[::-1]
-
 ```
 <!-- .element: class="big-code" -->
 
 ### Python 3.10
 ```python
-
 def is_palindrome(s: str | None = None) -> bool:
   if s is None:
     return False
