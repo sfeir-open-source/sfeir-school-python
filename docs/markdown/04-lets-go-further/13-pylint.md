@@ -34,7 +34,7 @@ def main():
   for i in [1, 2, 3]:
     def printer():
       """Print function"""
-      print i
+      print(i)
 
     list_of_printers.append(printer)
 ```
@@ -75,7 +75,7 @@ def main():
       """Make printer function"""
       def printer():
         """Print function"""
-        print i
+        print(i)
       return printer
 
     list_of_printers.append(make_printer(i))

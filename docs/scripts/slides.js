@@ -65,9 +65,16 @@ function letsGoFurtherSlides() {
   ];
 }
 
+function fastApi() {
+  return [
+    '05-fastapi/00-TITLE.md',
+    '05-fastapi/01-steps.md',
+  ];
+}
+
 function conclusionSlides() {
   return [
-    '05-conclusion/00-TITLE.md',
+    '06-conclusion/00-TITLE.md',
   ];
 }
 
@@ -78,6 +85,7 @@ function formation() {
     ...installationSlides(),
     ...letsGoSlides(),
     ...letsGoFurtherSlides(),
+    ...fastApi(),
     ...conclusionSlides(),
   ].map(slidePath => {
     return { path: slidePath };
