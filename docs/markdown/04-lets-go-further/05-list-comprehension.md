@@ -67,62 +67,11 @@ letters = [letter for letter in 'chaine']
 
 **La list comprehension**
 
-* Avec plusieurs boucles.
-
-```python
-[x + y for x in [1, 2, 3] for y in [10, 20, 30]]
-
-# [11, 21, 31, 12, 22, 32, 13, 23, 33]
-```
-
-<!-- .element: class="big-code" -->
-
-##==##
-<!-- .slide: class="with-code" -->
-
-# Pour aller plus loin - 13
-
-**La list comprehension**
-
-* Avec plusieurs boucles et plusieurs conditions.
-
-```python
-[x + y for x in [1, 2, 3] for y in [10, 20, 30] if (x+y)%11 == 0]
-# [11, 22, 33]
-
-[x + y for x in [1, 2, 3] for y in [10, 20, 30] if (x+y)%11 == 0 if (x+y)%2 == 0]
-# [22]
-```
-
-<!-- .element: class="big-code" -->
-
-##==##
-<!-- .slide: class="with-code" -->
-
-# Pour aller plus loin - 13
-
-**La list comprehension**
-
 * Set comprehension
 
 ```python
-letters = {letter for letter in 'aaaaaab'}
-# print(letters) => set(['a', 'b'])
+letters = {letter for letter in 'aaaaaab' if letter == "a"}
+# print(letters) => set(['a'])
 ```
 
 <!-- .element: class="big-code" -->
-
-<br>
-
-* Generator comprehension
-
-```python
-letters = (letter for letter in 'chaine')
-# print(letters) => generator
-# print(list(letters)) => ['c', 'h', a', 'i', 'n', 'e']
-```
-
-<!-- .element: class="big-code" -->
-
-Notes:
-La syntaxe ne change pas !

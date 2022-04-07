@@ -2,7 +2,7 @@
 
 **L’avenir de Python**
 
-* Python 2.x ne sera plus maintenu en 2020.
+* Python 2.x n'est plus maintenu depuis 2020.
 * Migration vers 3.7+ recommandée.
 
 Notes:

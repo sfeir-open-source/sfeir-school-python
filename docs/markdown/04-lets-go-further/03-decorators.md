@@ -1,6 +1,6 @@
 <!-- .slide: -->
 
-# Pour aller plus loin - 11
+# Pour aller plus loin - 03
 
 **Les décorateurs**
 
@@ -21,7 +21,7 @@ Modularité : permet d’organiser son code en conséquence et de le partager ai
 ##==##
 <!-- .slide: class="with-code" -->
 
-# Pour aller plus loin - 11
+# Pour aller plus loin - 03
 
 **Les décorateurs**
 
@@ -46,7 +46,7 @@ Le wrapper : fonction qui enveloppe généralement la fonction initiale
 ##==##
 <!-- .slide: class="with-code" -->
 
-# Pour aller plus loin - 11
+# Pour aller plus loin - 03
 
 **Les décorateurs**
 
@@ -66,7 +66,7 @@ mon_decorateur(is_palindrome)()  # sans le décorateur
 ##==##
 <!-- .slide: class="with-code" -->
 
-# Pour aller plus loin - 11
+# Pour aller plus loin - 03
 
 **Les décorateurs**
 
@@ -88,7 +88,7 @@ def mon_decorateur(func):
 ##==##
 <!-- .slide: class="with-code" -->
 
-# Pour aller plus loin - 11
+# Pour aller plus loin - 03
 
 **Les décorateurs**
 
@@ -110,7 +110,7 @@ def mon_super_decorateur(call=True):
 ##==##
 <!-- .slide: class="with-code" -->
 
-# Pour aller plus loin - 11
+# Pour aller plus loin - 03
 
 **Les décorateurs**
 
@@ -129,59 +129,6 @@ def mon_super_decorateur(call=True):
 
 ```python
 mon_super_decorateur(True)(is_palindrome)()
-```
-
-<!-- .element: class="big-code" -->
-
-##==##
-<!-- .slide: class="with-code" -->
-
-# Pour aller plus loin - 11
-
-**Les décorateurs**
-
-* Le décorateur remplace les propriétés initiales de la fonction.
-
-```python
-is_palindrome.__name__  # wrapper
-is_palindrome.__doc__  #
-```
-
-<!-- .element: class="big-code" -->
-
-<br>
-
-* Utiliser le décorateur “wraps”.
-
-```python
-is_palindrome.__name__  # is_palindrome
-is_palindrome.__doc__  # indique si la chaine s est un palindrome
-```
-
-<!-- .element: class="big-code" -->
-
-Notes:
-wraps n’est pas obligatoire mais conseillé
-
-##==##
-<!-- .slide: class="with-code" -->
-
-# Pour aller plus loin - 11
-
-**Les décorateurs**
-
-* Un décorateur complet
-
-```python
-import functools
-def mon_super_decorateur(call=True):
-  def mon_decorateur(func):
-    @functools.wraps(func)
-    def wrapper(*args, **kwargs):
-      if call:
-        return func(*args, **kwargs)
-    return wrapper
-  return mon_decorateur
 ```
 
 <!-- .element: class="big-code" -->
