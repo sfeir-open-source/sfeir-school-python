@@ -68,6 +68,9 @@ not_good = Car(color=['b', 'l', 'u', 'e'], gears=4)
 
 ```
 
+Notes:
+Utilisé par Microsoft, AWS, la NSA, Uber et Jupyter.
+
 ##==##
 <!-- .slide: class="exercice sfeir-bg-pink" -->
 

@@ -19,3 +19,11 @@ Pour démarrer l'API, lancez la commande `uvicorn main:app` dans un terminal. De
 ### Accès à l'API
 
 Pour accéder à l'API, allez sur http://127.0.0.1:8000/. Vous pouvez consulter http://127.0.0.1:8000/docs ou http://127.0.0.1:8000/redoc pour lire la documentation de l'API.
+
+### Besoin d'aide ?
+
+Voici quelques liens qui pourraient vous aider lors des exercises :
+* [Les types en Python](https://fastapi.tiangolo.com/python-types/)
+* [Tutoriel FastAPI](https://fastapi.tiangolo.com/tutorial/)
+* [Documentation Databses](https://www.encode.io/databases/)
+* [Documentation Pydantic](https://pydantic-docs.helpmanual.io/)
