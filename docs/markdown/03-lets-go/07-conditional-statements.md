@@ -30,13 +30,13 @@ Parler des keywords “pass” / “del”
 * La condition est une expression booléenne.
 * Nous retrouvons les opérateurs classiques :
 
-|               |                            |                    |           |
-|---------------|----------------------------|--------------------|-----------|
-| **`<`**       | strictly less than         | **`==`**           | equal     |
-| **`<=`**      | less than or equal         | **`!=`**           | not equal |
-| **`>`**       | strictly greater than      | `x` **`or`** `y`   | or        |
-| **`>=`**      | greater than or equal      | `x` **`and`** `y`  | and       |
-| **`not`** `a` | greater than or equal      |                    |           |
+|               |                       |                    |           |
+|---------------|-----------------------|--------------------|-----------|
+| **`<`**       | strictly less than    | **`==`**           | equal     |
+| **`<=`**      | less than or equal    | **`!=`**           | not equal |
+| **`>`**       | strictly greater than | `x` **`or`** `y`   | or        |
+| **`>=`**      | greater than or equal | `x` **`and`** `y`  | and       |
+| **`not`** `a` | not                   |                    |           |
 
 ##==##
 <!-- .slide: class="with-code" -->
