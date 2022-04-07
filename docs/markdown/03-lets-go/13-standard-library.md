@@ -73,3 +73,21 @@ print(f"Args used {sys.argv[1]}, {sys.argv[2]}")
 python3 main.py "test1" "test2" # Output Args used test1 test2
 ```
 <!-- .element: class="big-code" -->
+
+##==##
+<!-- .slide: -->
+
+# Les bases - 12
+
+**Les Librairies standard**
+
+Liste non exhaustive de modules standard Python
+
+|           |             |         |
+|-----------|-------------|---------|
+| sqlite3   | turtle      | logging |
+| glob      | datetime    | tkinter |
+| math      | collections | secrets |
+| errno     | pprint      | zipfile |
+| threading | enum        | typing  |
+| json      | random      | csv     |
