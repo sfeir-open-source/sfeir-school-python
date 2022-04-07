@@ -1,6 +1,6 @@
 <!-- .slide: -->
 
-# Orienté Objet - 14
+# Pour aller plus loin - 06
 
 **Les classes - context manager**
 
@@ -13,7 +13,7 @@
 ##==##
 <!-- .slide: class="with-code two-column-layout" -->
 
-# Orienté Objet - 14
+# Pour aller plus loin - 07
 
 **Les classes - context manager**
 
@@ -46,7 +46,7 @@ with MyContextManager():
 ##==##
 <!-- .slide: class="with-code two-column-layout" -->
 
-# Orienté Objet - 14
+# Pour aller plus loin - 07
 
 **Les classes - context manager**
 

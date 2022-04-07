@@ -1,6 +1,6 @@
 <!-- .slide: -->
 
-# Bonnes pratiques - 15
+# Pour aller plus loin - 10
 
 **Pylint - comment imposer ces règles ?**
 
@@ -18,7 +18,7 @@
 ##==##
 <!-- .slide: class="with-code two-column-layout" -->
 
-# Bonnes pratiques - 15
+# Pour aller plus loin - 10
 
 **Pylint - un cas d’exemple**
 
@@ -57,7 +57,7 @@ W: 10,12: Cell variable i defined in loop (cell-var-from-loop)
 ##==##
 <!-- .slide: class="with-code two-column-layout" -->
 
-# Bonnes pratiques - 15
+# Pour aller plus loin - 10
 
 **Pylint - un cas d’exemple**
 

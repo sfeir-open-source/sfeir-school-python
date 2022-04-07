@@ -115,4 +115,4 @@ Utilisé par Microsoft, AWS, la NSA, Uber et Jupyter.
     * `PUT /message/id` pour modifier un message
     * `DELETE /message/id` pour supprimer un message
 
-* Pour les plus rapides, il y a encore plus de routes dans `step-bonus-fastapi`
+* Pour les plus rapides, il y a encore plus de routes dans `step-bonus-fastapi`.

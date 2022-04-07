@@ -1,6 +1,6 @@
 <!-- .slide: class="with-code" -->
 
-# Pour aller plus loin - 13
+# Pour aller plus loin - 05
 
 **La list comprehension**
 
@@ -18,7 +18,7 @@ result = [x for x in iterable ... if condition ...]
 ##==##
 <!-- .slide: class="with-code two-column-layout" -->
 
-# Pour aller plus loin - 13
+# Pour aller plus loin - 05
 
 **La list comprehension**
 
@@ -48,7 +48,7 @@ print(letters)
 ##==##
 <!-- .slide: class="with-code" -->
 
-# Pour aller plus loin - 13
+# Pour aller plus loin - 05
 
 **La list comprehension**
 
@@ -63,7 +63,7 @@ letters = [letter for letter in 'chaine']
 ##==##
 <!-- .slide: class="with-code" -->
 
-# Pour aller plus loin - 13
+# Pour aller plus loin - 05
 
 **La list comprehension**
 

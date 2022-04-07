@@ -59,6 +59,7 @@ function letsGoFurtherSlides() {
     '04-lets-go-further/07-classes.md',
     '04-lets-go-further/09-context-manager.md',
     '04-lets-go-further/10-callables.md',
+    '04-lets-go-further/11-coroutines.md',
     '04-lets-go-further/12-code-conventions.md',
     '04-lets-go-further/13-pylint.md',
     '04-lets-go-further/14-unit-tests.md'

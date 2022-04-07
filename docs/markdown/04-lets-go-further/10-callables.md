@@ -1,6 +1,6 @@
 <!-- .slide: class="with-code two-column-layout" -->
 
-# Orienté Objet - 14
+# Pour aller plus loin - 08
 
 **Les classes - callable (comme une fonction)**
 

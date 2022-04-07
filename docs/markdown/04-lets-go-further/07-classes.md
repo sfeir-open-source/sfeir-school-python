@@ -1,6 +1,6 @@
 <!-- .slide: -->
 
-# Orienté Objet - 14
+# Pour aller plus loin - 06
 
 **Les classes**
 
@@ -12,7 +12,7 @@
 ##==##
 <!-- .slide: class="with-code" -->
 
-# Orienté Objet - 14
+# Pour aller plus loin - 06
 
 **Les classes**
 
@@ -34,7 +34,7 @@ maya.eat()
 ##==##
 <!-- .slide: class="with-code" -->
 
-# Orienté Objet - 14
+# Pour aller plus loin - 06
 
 **Les classes - constructeur**
 
@@ -57,7 +57,7 @@ maya = Giraffe('Maya')
 ##==##
 <!-- .slide: class="with-code" -->
 
-# Orienté Objet - 14
+# Pour aller plus loin - 06
 
 **Les classes - héritage**
 
@@ -85,7 +85,7 @@ Notes: On peut hériter de plusieurs classes
 
 <!-- .slide: class="with-code two-column-layout" -->
 
-# Orienté Objet - 14
+# Pour aller plus loin - 06
 
 **Les classes - getter / setter**
 
@@ -129,7 +129,7 @@ print(a.age)  # 10
 ##==##
 <!-- .slide: class="with-code" -->
 
-# Orienté Objet - 14
+# Pour aller plus loin - 06
 
 **Les classes - classmethod**
 
@@ -155,7 +155,7 @@ On peut accéder à une variable de classe avec une classmethod.
 ##==##
 <!-- .slide: class="with-code two-column-layout" -->
 
-# Orienté Objet - 14
+# Pour aller plus loin - 06
 
 **Les classes - staticmethod**
 
@@ -178,7 +178,7 @@ age = Animal.get_age_from_year(2000)  # 18
 ##==##
 <!-- .slide: class="with-code two-column-layout" -->
 
-# Orienté Objet - 14
+# Pour aller plus loin - 06
 
 **Les classes - classmethod vs staticmethod**
 
@@ -221,7 +221,7 @@ print(isinstance(b, Giraffe))  # False
 ##==##
 <!-- .slide: class="with-code two-column-layout" -->
 
-# Orienté Objet - 14
+# Pour aller plus loin - 06
 
 **Les classes - représentation**
 
@@ -267,7 +267,7 @@ print([a, b])
 ##==##
 <!-- .slide: class="with-code two-column-layout" -->
 
-# Orienté Objet - 14
+# Pour aller plus loin - 06
 
 **Les classes - surcharge des opérateurs**
 
@@ -320,7 +320,7 @@ N.B. : il est également possible de surcharger les opérateurs de comparaison.
 ##==##
 <!-- .slide: class="with-code two-column-layout" -->
 
-# Orienté Objet - 14
+# Pour aller plus loin - 06
 
 **Les classes - conversion**
 
