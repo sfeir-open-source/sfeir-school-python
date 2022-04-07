@@ -1,7 +1,7 @@
 function schoolSlides() {
   return [
     '00-school/00-TITLE.md',
-    '00-school/01-speaker-aal.md',
+    '00-school/01-speaker-amo.md',
     '00-school/02-speaker-jbo.md',
     '00-school/03-repository.md',
     '00-school/04-app-screenshot.md',
