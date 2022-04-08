@@ -15,7 +15,7 @@ class MessageGet(BaseModel):
     pass
 
 
-database = Database("sqlite:///test.db")
+database = Database("sqlite:///../test.db")
 
 app = FastAPI()
 

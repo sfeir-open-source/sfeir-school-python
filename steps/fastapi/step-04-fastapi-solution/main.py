@@ -21,7 +21,7 @@ class MessageGet(BaseModel):
     creation_date: datetime.datetime
 
 
-database = Database("sqlite:///test.db")
+database = Database("sqlite:///../test.db")
 
 app = FastAPI()
 

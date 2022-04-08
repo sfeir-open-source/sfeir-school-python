@@ -1,7 +1,7 @@
 from databases import Database
 import asyncio
 
-db = Database('sqlite:///test.db')
+db = Database('sqlite:///../test.db')
 
 async def main():
 

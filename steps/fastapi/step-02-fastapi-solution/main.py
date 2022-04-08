@@ -2,7 +2,7 @@ from fastapi import FastAPI, Response
 from databases import Database
 
 
-database = Database("sqlite:///test.db")
+database = Database("sqlite:///../test.db")
 
 app = FastAPI()
 
