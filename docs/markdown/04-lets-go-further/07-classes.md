@@ -4,12 +4,13 @@
 
 **Les classes**
 
-* Python est aussi un langage orienté objet.
-* Petit rappel, il faut bien faire la différence entre :
-  * une classe : structure partageant des propriétés
-  * un objet : une instance de la classe
+- Python est aussi un langage orienté objet.
+- Petit rappel, il faut bien faire la différence entre :
+  - une classe : structure partageant des propriétés
+  - un objet : une instance de la classe
 
 ##==##
+
 <!-- .slide: class="with-code" -->
 
 # Pour aller plus loin - 06
@@ -32,6 +33,7 @@ maya.eat()
 <!-- .element: class="big-code" -->
 
 ##==##
+
 <!-- .slide: class="with-code" -->
 
 # Pour aller plus loin - 06
@@ -55,6 +57,7 @@ maya = Giraffe('Maya')
 <!-- .element: class="big-code" -->
 
 ##==##
+
 <!-- .slide: class="with-code" -->
 
 # Pour aller plus loin - 06
@@ -72,24 +75,22 @@ class Animal(object):
   def eat(self):
     print('{} is eating.'.format(self.name))
 
-class Giraffe(Animal): 
+class Giraffe(Animal):
   def eat_leaves(self):
     print('{} is eating some leaves.'.format(self.name))
 ```
 
 <!-- .element: class="big-code" -->
+
 Notes: On peut hériter de plusieurs classes
 
 ##==##
-<!-- .slide: class="with-code" -->
 
-<!-- .slide: class="with-code two-column-layout" -->
+<!-- .slide: class="with-code two-column" -->
 
 # Pour aller plus loin - 06
 
 **Les classes - getter / setter**
-
-##--##
 
 <br><br>
 
@@ -127,6 +128,7 @@ print(a.age)  # 10
 ```
 
 ##==##
+
 <!-- .slide: class="with-code" -->
 
 # Pour aller plus loin - 06
@@ -153,7 +155,8 @@ Notes:
 On peut accéder à une variable de classe avec une classmethod.
 
 ##==##
-<!-- .slide: class="with-code two-column-layout" -->
+
+<!-- .slide: class="with-code" -->
 
 # Pour aller plus loin - 06
 
@@ -176,13 +179,12 @@ age = Animal.get_age_from_year(2000)  # 18
 <!-- .element: class="big-code" -->
 
 ##==##
-<!-- .slide: class="with-code two-column-layout" -->
+
+<!-- .slide: class="with-code two-column" -->
 
 # Pour aller plus loin - 06
 
 **Les classes - classmethod vs staticmethod**
-
-##--##
 
 <br><br>
 
@@ -219,13 +221,12 @@ print(isinstance(b, Giraffe))  # False
 ```
 
 ##==##
-<!-- .slide: class="with-code two-column-layout" -->
+
+<!-- .slide: class="with-code two-column" -->
 
 # Pour aller plus loin - 06
 
 **Les classes - représentation**
-
-##--##
 
 <br><br>
 
@@ -265,13 +266,12 @@ print([a, b])
 ```
 
 ##==##
-<!-- .slide: class="with-code two-column-layout" -->
+
+<!-- .slide: class="with-code two-column" -->
 
 # Pour aller plus loin - 06
 
 **Les classes - surcharge des opérateurs**
-
-##--##
 
 <br><br>
 
@@ -318,13 +318,12 @@ Notes:
 N.B. : il est également possible de surcharger les opérateurs de comparaison.
 
 ##==##
-<!-- .slide: class="with-code two-column-layout" -->
+
+<!-- .slide: class="with-code two-column" -->
 
 # Pour aller plus loin - 06
 
 **Les classes - conversion**
-
-##--##
 
 <br><br>
 

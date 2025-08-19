@@ -4,20 +4,19 @@
 
 **Les classes - context manager**
 
-* C’est généralement une classe.
-* On l’utilise avec le mot clé “with”.
-* Permet de visualiser la portion de code concernée.
-* Permet de réutiliser les actions faites à l’entrée et à la sortie.
-* L’action de sortie est toujours exécutée même en cas d’exception (correspond globalement au mot clé “finally”).
+- C’est généralement une classe.
+- On l’utilise avec le mot clé “with”.
+- Permet de visualiser la portion de code concernée.
+- Permet de réutiliser les actions faites à l’entrée et à la sortie.
+- L’action de sortie est toujours exécutée même en cas d’exception (correspond globalement au mot clé “finally”).
 
 ##==##
-<!-- .slide: class="with-code two-column-layout" -->
+
+<!-- .slide: class="with-code two-column" -->
 
 # Pour aller plus loin - 07
 
 **Les classes - context manager**
-
-##--##
 
 <br><br>
 
@@ -44,16 +43,15 @@ with MyContextManager():
 ```
 
 ##==##
-<!-- .slide: class="with-code two-column-layout" -->
+
+<!-- .slide: class="with-code two-column" -->
 
 # Pour aller plus loin - 07
 
 **Les classes - context manager**
 
-##--##
-
 <br><br>
-Sans context manager: 
+Sans context manager:
 
 ```python
 import os
@@ -71,7 +69,8 @@ file.close() # Close file
 
 <br><br>
 
-Avec context manager: 
+Avec context manager:
+
 ```python
 with open(file_path, mode='r') as file: # Open and Close file
   # Reading the file line by line.

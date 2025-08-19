@@ -1,10 +1,8 @@
-<!-- .slide: class="with-code two-column-layout" -->
+<!-- .slide: class="with-code two-column" -->
 
 # Pour aller plus loin - 08
 
 **Les classes - callable (comme une fonction)**
-
-##--##
 
 <br><br>
 

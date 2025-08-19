@@ -4,25 +4,25 @@
 
 **Pylint - comment imposer ces règles ?**
 
-* Pylint : outils qui permet de faire de l’analyse statique de code :
-  * Erreur d’importation
-  * Convention de nommage non respectée
+- Pylint : outils qui permet de faire de l’analyse statique de code :
 
-* Pour cela, il attribue une note au code, les messages sont classés ainsi :
-  * [R]efactor : ne respecte pas les bonnes pratiques
-  * [C]onvention : ne respecte pas les conventions de nommage
-  * [W]arning : problème de style ou erreur mineure de programmation
-  * [E]rror : erreur majeure de programmation (sûrement un bug)
-  * [F]atal : impossible de continuer l’analyse
+  - Erreur d’importation
+  - Convention de nommage non respectée
+
+- Pour cela, il attribue une note au code, les messages sont classés ainsi :
+  - [R]efactor : ne respecte pas les bonnes pratiques
+  - [C]onvention : ne respecte pas les conventions de nommage
+  - [W]arning : problème de style ou erreur mineure de programmation
+  - [E]rror : erreur majeure de programmation (sûrement un bug)
+  - [F]atal : impossible de continuer l’analyse
 
 ##==##
-<!-- .slide: class="with-code two-column-layout" -->
+
+<!-- .slide: class="with-code two-column" -->
 
 # Pour aller plus loin - 10
 
 **Pylint - un cas d’exemple**
-
-##--##
 
 <br><br>
 
@@ -55,13 +55,12 @@ W: 10,12: Cell variable i defined in loop (cell-var-from-loop)
 ```
 
 ##==##
-<!-- .slide: class="with-code two-column-layout" -->
+
+<!-- .slide: class="with-code two-column" -->
 
 # Pour aller plus loin - 10
 
 **Pylint - un cas d’exemple**
-
-##--##
 
 <br><br>
 

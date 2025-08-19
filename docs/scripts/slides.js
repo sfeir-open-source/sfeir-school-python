@@ -1,3 +1,5 @@
+import { SfeirThemeInitializer } from '../web_modules/sfeir-school-theme/sfeir-school-theme.mjs';
+
 function schoolSlides() {
   return [
     '00-school/00-TITLE.md',
@@ -44,7 +46,7 @@ function letsGoSlides() {
     '03-lets-go/11-packages.md',
     '03-lets-go/12-imports.md',
     '03-lets-go/13-standard-library.md',
-    '03-lets-go/14-step-02.md'
+    '03-lets-go/14-step-02.md',
   ];
 }
 
@@ -62,21 +64,16 @@ function letsGoFurtherSlides() {
     '04-lets-go-further/11-coroutines.md',
     '04-lets-go-further/12-code-conventions.md',
     '04-lets-go-further/13-pylint.md',
-    '04-lets-go-further/14-unit-tests.md'
+    '04-lets-go-further/14-unit-tests.md',
   ];
 }
 
 function fastApi() {
-  return [
-    '05-fastapi/00-TITLE.md',
-    '05-fastapi/01-steps.md',
-  ];
+  return ['05-fastapi/00-TITLE.md', '05-fastapi/01-steps.md'];
 }
 
 function conclusionSlides() {
-  return [
-    '06-conclusion/00-TITLE.md',
-  ];
+  return ['06-conclusion/00-TITLE.md'];
 }
 
 function formation() {
@@ -88,11 +85,9 @@ function formation() {
     ...letsGoFurtherSlides(),
     ...fastApi(),
     ...conclusionSlides(),
-  ].map(slidePath => {
+  ].map((slidePath) => {
     return { path: slidePath };
   });
 }
 
-export function usedSlides() {
-  return formation();
-}
+SfeirThemeInitializer.init(formation);
