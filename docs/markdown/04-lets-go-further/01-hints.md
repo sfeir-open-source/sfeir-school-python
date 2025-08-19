@@ -5,7 +5,9 @@
 
 * Une fonction qui prend des paramètres peut typer ses paramètres et son retour.
 
+
 ##==##
+
 <!-- .slide: class="with-code" -->
 # Pour aller plus loin - 01
 
@@ -27,7 +29,9 @@ def is_palindrome(s: str) -> bool:
 ```
 
 <!-- .element: class="big-code" -->
+
 ##==##
+
 <!-- .slide: class="with-code" -->
 # Pour aller plus loin - 01
 

@@ -68,13 +68,10 @@ maya = Giraffe('Maya')
 class Animal(object):
   def __init__(self, name):
     self.name = name
-
   def drink(self):
     print('{} is drinking.'.format(self.name))
-
   def eat(self):
     print('{} is eating.'.format(self.name))
-
 class Giraffe(Animal):
   def eat_leaves(self):
     print('{} is eating some leaves.'.format(self.name))
@@ -86,13 +83,15 @@ Notes: On peut hériter de plusieurs classes
 
 ##==##
 
-<!-- .slide: class="with-code two-column" -->
+<!-- .slide: class="with-code tc-multiple-columns" -->
+
+##++##
 
 # Pour aller plus loin - 06
 
 **Les classes - getter / setter**
 
-<br><br>
+<br>
 
 ```python
 class Animal(object):
@@ -113,9 +112,11 @@ class Animal(object):
       print('{} is too old!'.format(self.name))
 ```
 
-##--##
+##++##
 
-<br><br>
+##++## class="with-code"
+
+<br><br><br><br><br><br>
 
 ```python
 a = Animal('Maya')
@@ -126,6 +127,8 @@ print(a.age)  # 10
 a.age = 500  # Maya is too old!
 print(a.age)  # 10
 ```
+
+##++##
 
 ##==##
 
@@ -180,13 +183,15 @@ age = Animal.get_age_from_year(2000)  # 18
 
 ##==##
 
-<!-- .slide: class="with-code two-column" -->
+<!-- .slide: class="with-code tc-multiple-columns" -->
+
+##++##
 
 # Pour aller plus loin - 06
 
 **Les classes - classmethod vs staticmethod**
 
-<br><br>
+<br>
 
 ```python
 from datetime import date
@@ -205,9 +210,11 @@ class Animal(object):
     return Animal(name, 0)
 ```
 
-##--##
+##++##
 
-<br><br>
+##++## class="with-code"
+
+<br><br><br><br><br><br>
 
 ```python
 class Giraffe(Animal):
@@ -220,15 +227,19 @@ b = Giraffe.from_name('Maya')
 print(isinstance(b, Giraffe))  # False
 ```
 
+##++##
+
 ##==##
 
-<!-- .slide: class="with-code two-column" -->
+<!-- .slide: class="with-code tc-multiple-columns" -->
+
+##++##
 
 # Pour aller plus loin - 06
 
 **Les classes - représentation**
 
-<br><br>
+<br>
 
 ```python
 class Animal(object):
@@ -246,9 +257,11 @@ class Animal(object):
     return '{}: {} years old'.format(self.name, self.age)
 ```
 
-##--##
+##++##
 
-<br><br>
+##++## class="with-code"
+
+<br><br><br><br><br><br>
 
 ```python
 a = Animal('Maya', 20)
@@ -265,15 +278,17 @@ print([a, b])
 # Apres - [Animal('Maya', 20), Animal('Jojo', 100)]
 ```
 
+##++##
+
 ##==##
 
-<!-- .slide: class="with-code two-column" -->
+<!-- .slide: class="with-code tc-multiple-columns" -->
+
+##++##
 
 # Pour aller plus loin - 06
 
 **Les classes - surcharge des opérateurs**
-
-<br><br>
 
 ```python
 class Animal(object):
@@ -301,9 +316,11 @@ class Animal(object):
     return '{}: {} years old'.format(self.name, self.age)
 ```
 
-##--##
+##++##
 
-<br><br>
+##++## class="with-code"
+
+<br><br><br><br><br>
 
 ```python
 a = Animal('Maya', 10)
@@ -314,18 +331,21 @@ print(b)  # Jojo: 20 years old
 print(a + b)  # Maya + Jojo: 30 years old
 ```
 
+##++##
+
 Notes:
 N.B. : il est également possible de surcharger les opérateurs de comparaison.
-
 ##==##
 
-<!-- .slide: class="with-code two-column" -->
+<!-- .slide: class="with-code tc-multiple-columns" -->
+
+##++##
 
 # Pour aller plus loin - 06
 
 **Les classes - conversion**
 
-<br><br>
+<br>
 
 ```python
 class Animal(object):
@@ -346,9 +366,11 @@ class Animal(object):
     return self.name
 ```
 
-##--##
+##++##
 
-<br><br>
+##++## class="with-code"
+
+<br><br><br><br><br><br>
 
 ```python
 a = Animal('Maya', 2)
@@ -359,3 +381,5 @@ print(float(a))  # 2.0
 print(str(a))  # Maya
 print(l[a])  # 30
 ```
+
+##++##

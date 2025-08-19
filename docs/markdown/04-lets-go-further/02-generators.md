@@ -11,7 +11,9 @@
 * La fonction s’arrête une fois que tout a été consommé.
 * A ce moment là une exception “StopIteration” est levée.
 
+
 ##==##
+
 <!-- .slide: class="with-code" -->
 
 # Pour aller plus loin - 02
@@ -29,7 +31,9 @@ def simple_generator():
 
 <!-- .element: class="big-code" -->
 
+
 ##==##
+
 <!-- .slide: -->
 
 # Pour aller plus loin - 02
@@ -53,7 +57,9 @@ Generators are lazy. This means that if you're using only the first five results
 
 Generally, it is simpler to write than list generating functions.
 
+
 ##==##
+
 <!-- .slide: -->
 
 # Pour aller plus loin - 02
@@ -74,7 +80,9 @@ The size is unknown until you are done processing, which can be detrimental to c
 
 Generators are not indexable, which means that simple_generator_function[2] will not work.
 
+
 ##==##
+
 <!-- .slide: class="with-code" -->
 
 # Pour aller plus loin - 02
@@ -103,7 +111,9 @@ The size is unknown until you are done processing, which can be detrimental to c
 
 Generators are not indexable, which means that simple_generator_function[2] will not work.
 
+
 ##==##
+
 <!-- .slide: class="with-code" -->
 
 # Pour aller plus loin - 02

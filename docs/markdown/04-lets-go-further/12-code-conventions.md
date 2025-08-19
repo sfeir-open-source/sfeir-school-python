@@ -12,7 +12,9 @@
 * PEP 20 - The Zen of Python :
   * https://www.python.org/dev/peps/pep-0020/
 
+
 ##==##
+
 <!-- .slide: -->
 
 # Pour aller plus loin - 10
@@ -26,7 +28,9 @@
 * Il faut utiliser 2 sauts de ligne pour séparer une classe.
 * Il faut utiliser des caractères ASCII ou UTF-8.
 
+
 ##==##
+
 <!-- .slide: -->
 
 # Pour aller plus loin - 10
@@ -41,7 +45,9 @@
 * Préférer les imports absolus aux relatifs.
 * Éviter d’importer un module en entier avec *
 
+
 ##==##
+
 <!-- .slide: -->
 
 # Pour aller plus loin - 10
@@ -54,7 +60,9 @@
 * Pas plus d’un espace pour les assignations.
 * Pas d’espace inutile à la fin des lignes.
 
+
 ##==##
+
 <!-- .slide: class="with-code" -->
 
 # Pour aller plus loin - 10
@@ -93,7 +101,9 @@ Docstring : permet de documenter la fonctionnalité macro de la fonction (param�
 
 Commentaire (bloc ou ligne) : utile pour les détails d’implémentation.
 
+
 ##==##
+
 <!-- .slide: -->
 
 # Pour aller plus loin - 10
@@ -110,7 +120,9 @@ Commentaire (bloc ou ligne) : utile pour les détails d’implémentation.
   * si conflit avec un mot clé natif, ajouter un _ ou utiliser un synonyme
 * Constante : en majuscule
 
+
 ##==##
+
 <!-- .slide: -->
 
 # Pour aller plus loin - 10

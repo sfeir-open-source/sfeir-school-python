@@ -14,7 +14,9 @@ def is_palindrome():
 
 <!-- .element: class="big-code" -->
 
+
 ##==##
+
 <!-- .slide: class="with-code" -->
 
 # Les bases - 04
@@ -41,7 +43,9 @@ def is_palindrome(s: str) -> bool:
 
 <!-- .element: class="big-code" -->
 
+
 ##==##
+
 <!-- .slide: class="with-code" -->
 
 # Les bases - 04
@@ -67,7 +71,9 @@ ma_fonction(10, 42, 'ok')
 
 <!-- .element: class="big-code" -->
 
+
 ##==##
+
 <!-- .slide: class="with-code" -->
 
 # Les bases - 04
@@ -83,7 +89,9 @@ def is_palindrome(s):
 
 <!-- .element: class="big-code" -->
 
+
 ##==##
+
 <!-- .slide: class="with-code" -->
 
 # Les bases - 04
@@ -101,7 +109,9 @@ def get_xy(s):
 
 <!-- .element: class="big-code" -->
 
+
 ##==##
+
 <!-- .slide: class="with-code" -->
 
 # Les bases - 04

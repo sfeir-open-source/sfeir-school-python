@@ -17,7 +17,9 @@ result = [x for x in iterable ... if condition ...]
 
 ##==##
 
-<!-- .slide: class="with-code two-column" -->
+<!-- .slide: class="with-code tc-multiple-columns" -->
+
+##++##
 
 # Pour aller plus loin - 05
 
@@ -34,15 +36,19 @@ for letter in 'chaine':
   letters.append(letter)
 ```
 
-##--##
+##++##
 
-<br><br><br>
+##++## class="with-code"
+
+<br><br><br><br><br><br><br><br><br><br><br>
 
 ```python
 print(letters)
 
 # ['c', 'h', 'a', 'i', 'n', 'e']
 ```
+
+##++##
 
 ##==##
 

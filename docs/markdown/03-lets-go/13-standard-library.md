@@ -29,7 +29,9 @@ for file_name in list_files:
 ```
 
 
+
 ##==##
+
 <!-- .slide: class="with-code" -->
 # Les bases - 12
 
@@ -50,7 +52,9 @@ if match:
 ```
 <!-- .element: class="big-code" -->
 
+
 ##==##
+
 <!-- .slide: class="with-code" -->
 # Les bases - 12
 
@@ -74,7 +78,9 @@ python3 main.py "test1" "test2" # Output Args used test1 test2
 ```
 <!-- .element: class="big-code" -->
 
+
 ##==##
+
 <!-- .slide: -->
 
 # Les bases - 12

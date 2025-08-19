@@ -1,13 +1,16 @@
 <!-- .slide: class="speaker-slide" -->
 
+<div class="speaker-slide">
+
 # Présentation
 
-![speaker](./assets/images/speakers/jbo.png)
+![](./assets/images/speakers/jbo.png 'speaker')
 
 <h2> Julien <span> Bouquet</span></h2>
 
 ### Cloud Developer
 
-<!-- .element: class="icon-rule icon-first" -->
+![](./assets/images/logo_sfeir_blanc.png 'company')
 
-![company](./assets/images/logo_sfeir_blanc.png)
+</div>
+

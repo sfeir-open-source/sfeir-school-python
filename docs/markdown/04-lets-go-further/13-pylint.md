@@ -18,13 +18,15 @@
 
 ##==##
 
-<!-- .slide: class="with-code two-column" -->
+<!-- .slide: class="with-code tc-multiple-columns" -->
+
+##++##
 
 # Pour aller plus loin - 10
 
 **Pylint - un cas d’exemple**
 
-<br><br>
+<br>
 
 ```python
 def main():
@@ -39,9 +41,11 @@ def main():
     list_of_printers.append(printer)
 ```
 
-##--##
+##++##
 
-<br><br>
+##++## class="with-code"
+
+<br><br><br><br><br><br>
 
 ```python
 for func in list_of_printers:
@@ -54,15 +58,19 @@ for func in list_of_printers:
 W: 10,12: Cell variable i defined in loop (cell-var-from-loop)
 ```
 
+##++##
+
 ##==##
 
-<!-- .slide: class="with-code two-column" -->
+<!-- .slide: class="with-code tc-multiple-columns" -->
+
+##++##
 
 # Pour aller plus loin - 10
 
 **Pylint - un cas d’exemple**
 
-<br><br>
+<br>
 
 ```python
 def main():
@@ -80,9 +88,11 @@ def main():
     list_of_printers.append(make_printer(i))
 ```
 
-##--##
+##++##
 
-<br><br>
+##++## class="with-code"
+
+<br><br><br><br><br><br>
 
 ```python
 for func in list_of_printers:
@@ -92,3 +102,5 @@ for func in list_of_printers:
 # 2
 # 3
 ```
+
+##++##

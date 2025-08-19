@@ -22,7 +22,9 @@ Où les interruptions sont prédictibles et explicites, donc tout le code entre 
 
 Où l'ordonnancement entre les tâches n'est pas réalisé par le système d'exploitation, mais dans le userland et de façon plus intelligente et adaptée à la nature des tâches à exécuter en concurrence.
 
+
 ##==##
+
 <!-- .slide: class="with-code" -->
 
 # Pour aller plus loin - 09

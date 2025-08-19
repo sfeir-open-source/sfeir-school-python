@@ -12,7 +12,9 @@
   * GeneratorExit : méthode “close” du générateur
   * Exception : les erreurs générées par le programme
 
+
 ##==##
+
 <!-- .slide: -->
 
 # Les bases - 08
@@ -28,7 +30,9 @@
 | BufferError | NameError | ValueError |
 | EnvironmentError | ReferenceError | Warning |
 
+
 ##==##
+
 <!-- .slide: class="with-code" -->
 
 # Les bases - 08
@@ -49,7 +53,9 @@ class MyCustomException(Exception):
 
 * Cela permet de faciliter la gestion d’erreur.
 
+
 ##==##
+
 <!-- .slide: class="with-code" -->
 
 # Les bases - 08

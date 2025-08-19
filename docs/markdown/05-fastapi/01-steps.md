@@ -9,14 +9,16 @@
 - Annotations de type
 - Documentation automatique
 
-![center](./assets/images/fastapi.png)
+![](./assets/images/fastapi.png 'center')
 
 Notes:
 Très rapide : La performance est supérieure à Django et Flask et est même comparable aux performances de NodeJS et GO
 Annotation de Type (Type hints) : Facilite la validation, permet l'autocomplétion et facilite le debugging
 Documentation automatique : FastAPI génère la documentation en format Swagger UI et ReDoc automatiquement.
 
+
 ##==##
+
 
 <!-- .slide: class="exercice" -->
 
@@ -30,7 +32,9 @@ Documentation automatique : FastAPI génère la documentation en format Swagger 
 - Démarrer l'application.
 - Vérifier que l'API répond `Hello world!`
 
+
 ##==##
+
 
 <!-- .slide: class="exercice" -->
 
@@ -44,7 +48,9 @@ Documentation automatique : FastAPI génère la documentation en format Swagger 
 - Démarrer l'application.
 - Regarder ce que l'API retourne sur les routes `/health` et `/tables`.
 
+
 ##==##
+
 
 <!-- .slide: class="with-code" -->
 
@@ -76,7 +82,9 @@ not_good = Car(color=['b', 'l', 'u', 'e'], gears=4)
 Notes:
 Utilisé par Microsoft, AWS, la NSA, Uber et Jupyter.
 
+
 ##==##
+
 
 <!-- .slide: class="exercice" -->
 
@@ -94,7 +102,9 @@ Utilisé par Microsoft, AWS, la NSA, Uber et Jupyter.
   - `MessageUpdate` pour les routes `PUT`
     - Pour modifier un message, on a juste besoin du `message`
 
+
 ##==##
+
 
 <!-- .slide: class="exercice" -->
 
@@ -108,7 +118,9 @@ Utilisé par Microsoft, AWS, la NSA, Uber et Jupyter.
   - `POST /message` permettant de stocker un message dans la base de données. Cette route devra retourner au moins l'identifiant du message
   - `GET /message/id` retournant le message qui possède comme identifiant `id`
 
+
 ##==##
+
 
 <!-- .slide: class="exercice" -->
 

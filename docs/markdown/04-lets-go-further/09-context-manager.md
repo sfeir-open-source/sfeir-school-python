@@ -12,13 +12,15 @@
 
 ##==##
 
-<!-- .slide: class="with-code two-column" -->
+<!-- .slide: class="with-code tc-multiple-columns" -->
+
+##++##
 
 # Pour aller plus loin - 07
 
 **Les classes - context manager**
 
-<br><br>
+<br>
 
 ```python
 class MyContextManager(object):
@@ -29,9 +31,11 @@ class MyContextManager(object):
     print("After")
 ```
 
-##--##
+##++##
 
-<br><br>
+##++## class="with-code"
+
+<br><br><br><br><br><br>
 
 ```python
 with MyContextManager():
@@ -42,15 +46,19 @@ with MyContextManager():
 # After
 ```
 
+##++##
+
 ##==##
 
-<!-- .slide: class="with-code two-column" -->
+<!-- .slide: class="with-code tc-multiple-columns" -->
+
+##++##
 
 # Pour aller plus loin - 07
 
 **Les classes - context manager**
 
-<br><br>
+<br>
 Sans context manager:
 
 ```python
@@ -65,9 +73,11 @@ while line:
 file.close() # Close file
 ```
 
-##--##
+##++##
 
-<br><br>
+##++## class="with-code"
+
+<br><br><br><br><br><br>
 
 Avec context manager:
 
@@ -79,3 +89,5 @@ with open(file_path, mode='r') as file: # Open and Close file
     print(line)
     line = file.readline()
 ```
+
+##++##

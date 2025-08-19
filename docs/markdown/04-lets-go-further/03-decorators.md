@@ -18,7 +18,9 @@ Réutilisation : permet de réutiliser un comportement ou une logique à plusieu
 
 Modularité : permet d’organiser son code en conséquence et de le partager ainsi plus facilement
 
+
 ##==##
+
 <!-- .slide: class="with-code" -->
 
 # Pour aller plus loin - 03
@@ -43,7 +45,9 @@ def mon_decorateur(func):
 Notes:
 Le wrapper : fonction qui enveloppe généralement la fonction initiale
 
+
 ##==##
+
 <!-- .slide: class="with-code" -->
 
 # Pour aller plus loin - 03
@@ -63,7 +67,9 @@ mon_decorateur(is_palindrome)()  # sans le décorateur
 
 <!-- .element: class="big-code" -->
 
+
 ##==##
+
 <!-- .slide: class="with-code" -->
 
 # Pour aller plus loin - 03
@@ -85,7 +91,9 @@ def mon_decorateur(func):
 
 <!-- .element: class="big-code" -->
 
+
 ##==##
+
 <!-- .slide: class="with-code" -->
 
 # Pour aller plus loin - 03
@@ -107,7 +115,9 @@ def mon_super_decorateur(call=True):
 
 <!-- .element: class="big-code" -->
 
+
 ##==##
+
 <!-- .slide: class="with-code" -->
 
 # Pour aller plus loin - 03

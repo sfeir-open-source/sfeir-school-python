@@ -17,7 +17,9 @@ Dans cet interpréteur, 3 commandes sont importantes :
 - help(‘function or lib’) qui va vous fournir la documentation de la fonction ou la lib donnée (à noter si votre fonction vit dans une lib tierce, vous devrez d’abord importer cette lib pour utiliser help dessus)
 - dir(‘type or lib’) qui va lister l’ensemble des méthodes définies pour un type donné (dir(int) par exemple) ou une librairie donnée (dir(unittest))
 
+
 ##==##
+
 <!-- .slide: class="with-code" -->
 
 # Les bases - 01
@@ -38,7 +40,9 @@ $
 Notes:
 Exemple très simple, mais très efficace. Pas de compilation nécessaire, pas d’installation tierce.
 
+
 ##==##
+
 <!-- .slide: class="with-code" -->
 
 # Les bases - 01

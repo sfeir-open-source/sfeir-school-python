@@ -1,10 +1,12 @@
-<!-- .slide: class="with-code two-column" -->
+<!-- .slide: class="with-code tc-multiple-columns" -->
+
+##++##
 
 # Pour aller plus loin - 08
 
 **Les classes - callable (comme une fonction)**
 
-<br><br>
+<br>
 
 ```python
 class Animal(object):
@@ -19,11 +21,15 @@ class Animal(object):
     ))
 ```
 
-##--##
+##++##
 
-<br><br>
+##++## class="with-code"
+
+<br><br><br><br><br><br>
 
 ```python
 a = Animal('Maya', 20)
 a()  # Hello Maya (20 years old)!
 ```
+
+##++##

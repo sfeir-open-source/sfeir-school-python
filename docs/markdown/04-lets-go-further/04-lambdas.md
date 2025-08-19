@@ -20,7 +20,9 @@ get_xy('12.345 -6.789')  # (12.345, -6.789)
 
 <!-- .element: class="big-code" -->
 
+
 ##==##
+
 <!-- .slide: class="with-code" -->
 
 # Pour aller plus loin - 04
