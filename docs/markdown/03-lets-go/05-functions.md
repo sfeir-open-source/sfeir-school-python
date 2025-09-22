@@ -4,7 +4,6 @@
 
 **Les fonctions**
 
-* Une fonction est déclarée à l’aide du mot clé **def** suivi du nom de la fonction.
 * Le corps de la fonction correspond à tout ce qui est indenté dans le même bloc en-dessous.
 
 ```python
@@ -26,7 +25,7 @@ def is_palindrome():
 * Une fonction peut prendre zéro ou plusieurs arguments.
 
 ```python
-def is_palindrome(s):
+def is_palindrome(arg1, arg2, arg3):
   pass
 ```
 
@@ -66,7 +65,7 @@ def ma_fonction(a, b, c=False, d=None):
 * Dans ce cas là, les paramètres deviennent facultatifs. Il est possible de n’en renseigner que certains en les nommant.
 
 ```python
-ma_fonction(10, 42, 'ok')
+ma_fonction(10, 42)
 ```
 
 <!-- .element: class="big-code" -->

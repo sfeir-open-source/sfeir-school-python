@@ -1,10 +1,17 @@
 # Avant de se lancer
 
-**Un langage généraliste**
+**Un langage polyvalent**
 
-* Comme le C, il est adapté dans pratiquement tous les domaines de programmation.
-* Idéal pour le cloud.
-* Déjà utilisé dans le graphisme, les applications mobiles, le machine learning, etc.
+*   Développement Web & APIs
+*   Science des données & Machine Learning
+*   IA & IA Générative
+*   Scripting & Automatisation
 
 Notes:
-Python est un langage interprété, il dépend donc d’un moteur d’execution qui s’occupe de faire le lien avec la machine. Cela permet à Python d’être un très bon langage de scripting. Cependant, c’est avant tout un langage généraliste ! Il peut être utilisé dans pratiquement tous les domaines :-> Graphisme (interface graphiques avec PyQt et tkinter, 3D avec Blender)-> Developpements Web (avec Flask ou FastAPI)-> Jeux vidéos (avec PyGame)-> Machine Learning et Data science (avec NumPy et Pandas)-> infrastructure système (librairie standard qui supporte les différents protocol de communication : http, ftp, sftp, udp…)Cette portabilité, ainsi que le nombre de librairies disponibles en font un langage idéal pour le cloud.
+Python est un langage généraliste qui brille dans de nombreux domaines grâce à son écosystème de bibliothèques très riche :
+
+*   **Développement Web :** Frameworks robustes comme Django, Flask, et FastAPI pour créer des sites web et des APIs performantes.
+*   **Science des données et Machine Learning :** Des bibliothèques comme NumPy, Pandas, Scikit-learn, TensorFlow et PyTorch en font le langage de choix pour l'analyse de données et l'apprentissage automatique.
+*   **IA & IA Générative :** L'émergence de l'IA générative a renforcé la position de Python, avec des outils comme LangChain ou les bibliothèques de Hugging Face (Transformers).
+*   **Scripting et Automatisation :** Sa simplicité en fait un excellent outil pour automatiser des tâches, du simple script système à l'automatisation de processus complexes (scraping, etc.).
+*   **Autres domaines :** Développement de jeux (PyGame), interfaces graphiques (PyQt, Tkinter), etc.

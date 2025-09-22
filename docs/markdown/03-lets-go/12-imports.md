@@ -5,7 +5,7 @@
 **Les imports**
 
 * Permet d’utiliser les fonctions d’un package ou d’un module.
-* Imports absolus :
+* Imports absolus (recommandation PEP8) :
 
 ```python
 import os  # os.getcwd()
@@ -15,7 +15,7 @@ from os import *  # getcwd()
 
 <!-- .element: class="big-code" -->
 
-* Imports relatifs :
+* Imports relatifs (déconseillés: code peu maintenable + ne passe pas le linter)
 
 ```python
 from . import mod1  # mod1.func1
@@ -23,6 +23,3 @@ from .mod1 import func1  # func1
 ```
 
 <!-- .element: class="big-code" -->
-
-Notes:
-Imports relatifs déconseillés (code peu maintenable + ne passe pas le linter)

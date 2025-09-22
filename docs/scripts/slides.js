@@ -3,8 +3,7 @@ import { SfeirThemeInitializer } from '../web_modules/sfeir-school-theme/dist/sf
 function schoolSlides() {
   return [
     '00-school/00-TITLE.md',
-    '00-school/01-speaker-amo.md',
-    '00-school/02-speaker-jbo.md',
+    '00-school/02-speaker-ake.md',
     '00-school/03-repository.md',
     '00-school/04-app-screenshot.md',
     '00-school/05-what-we-will-do.md',
@@ -27,6 +26,8 @@ function installationSlides() {
     '02-installation/01-python.md',
     '02-installation/02-pip.md',
     '02-installation/03-virtualenv.md',
+    '02-installation/04-asdf-mise.md',
+    '02-installation/05-poetry-uv.md',
   ];
 }
 

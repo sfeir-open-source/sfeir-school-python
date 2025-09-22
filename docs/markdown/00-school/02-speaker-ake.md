@@ -4,11 +4,11 @@
 
 # Présentation
 
-![](./assets/images/speakers/jbo.png 'speaker')
+![](./assets/images/speakers/ake.png 'speaker')
 
-<h2> Julien <span> Bouquet</span></h2>
+<h2> Aurélien <span> Kempiak</span></h2>
 
-### Cloud Developer
+### Network DevOps
 
 ![](./assets/images/logo_sfeir_blanc.png 'company')
 
