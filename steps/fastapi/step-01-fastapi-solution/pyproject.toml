@@ -1,0 +1,35 @@
+[project]
+# --- Informations de base ---
+# Remplacer "mon-projet" par le nom de votre projet
+name = "fastapi_02"
+version = "0.1.0"
+description = "fastpi step 02"
+# Version minimale de Python requise
+requires-python = ">=3.12"
+
+# --- Dépendances de production ---
+# Les paquets nécessaires pour que votre application fonctionne
+dependencies = [
+  "fastapi>=0.110.0",
+  "uvicorn[standard]>=0.29.0",
+  "sqlalchemy[asyncio]",
+  "databases",
+  "aiosqlite",
+  "pydantic>=2.0",
+  "pyyaml>=6.0",
+  "uvloop>=0.19.0"
+]
+
+# --- (Optionnel) Liens utiles ---
+[project.urls]
+Homepage = "https://github.com/votre-nom/votre-projet"
+Repository = "https://github.com/votre-nom/votre-projet"
+
+# --- Dépendances de développement ---
+# Les paquets pour tester, linter, formater, etc.
+[project.optional-dependencies]
+dev = [
+  "pytest",
+  "ruff",
+  "httpx", # Pour tester les API
+]
