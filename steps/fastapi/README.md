@@ -6,7 +6,22 @@
 
 ### Installation des dépendances
 
-L'API va utiliser différents modules Python. S'ils ne sont pas installés sur votre machine, vous pouvez les installer avec la commande suivante `python -m pip install -r requirements.txt`.
+#### Méthode classique
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+uvicorn main:app --reload
+```
+
+#### Méthode moderne
+
+```bash
+uv pip compile pyproject.toml -o requirements.txt
+uv sync
+uv run uvicorn main:app --reload
+```
 
 ### Création de la base de données
 

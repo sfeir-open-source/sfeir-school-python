@@ -138,6 +138,8 @@ print(a.age)  # 10
 
 **Les classes - classmethod**
 
+* @classmethod : reçoit la classe en 1er paramètre (cls). 
+* Utile pour les "factory" qui fonctionnent avec l'héritage.
 ```python
 class Animal(object):
   max_age = 200
@@ -152,11 +154,6 @@ g.display_max_age()
 Animal.display_max_age()
 ```
 
-<!-- .element: class="big-code" -->
-
-Notes:
-On peut accéder à une variable de classe avec une classmethod.
-
 ##==##
 
 <!-- .slide: class="with-code" -->
@@ -164,6 +161,8 @@ On peut accéder à une variable de classe avec une classmethod.
 # Pour aller plus loin - 06
 
 **Les classes - staticmethod**
+
+* @staticmethod : Fonction utilitaire liée à la classe.
 
 ```python
 from datetime import date
@@ -178,56 +177,6 @@ class Animal(object):
 
 age = Animal.get_age_from_year(2000)  # 18
 ```
-
-<!-- .element: class="big-code" -->
-
-##==##
-
-<!-- .slide: class="with-code tc-multiple-columns" -->
-
-##++##
-
-# Pour aller plus loin - 06
-
-**Les classes - classmethod vs staticmethod**
-
-<br>
-
-```python
-from datetime import date
-
-class Animal(object):
-  def __init__(self, name, age):
-    self.name = name
-    self.age = age
-
-  @classmethod
-  def from_year(cls, name, year):
-    return cls(name, date.today().year - year)
-
-  @staticmethod
-  def from_name(name):
-    return Animal(name, 0)
-```
-
-##++##
-
-##++## class="with-code"
-
-<br><br><br><br><br><br>
-
-```python
-class Giraffe(Animal):
-  pass
-
-a = Giraffe.from_year('Maya', 2017)
-print(isinstance(a, Giraffe))  # True
-
-b = Giraffe.from_name('Maya')
-print(isinstance(b, Giraffe))  # False
-```
-
-##++##
 
 ##==##
 

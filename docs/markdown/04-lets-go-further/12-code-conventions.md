@@ -21,30 +21,26 @@
 
 **Les bonnes pratiques - disposition du code**
 
-* Le code doit être indenté en-dessous des parenthèses si la ligne est trop grande.
-* Il faut de préférence indenter avec 4 espaces.
-* Il ne faut pas dépasser 79 caractères par ligne (utiliser un “\”).
-* Les opérateurs doivent être au début de la ligne si celle-ci est trop grande.
-* Il faut utiliser 2 sauts de ligne pour séparer une classe.
-* Il faut utiliser des caractères ASCII ou UTF-8.
+*   **Indentation**: 4 espaces.
+*   **Longueur de ligne**: 79 caractères (souvent 120).
+*   **Sauts de ligne**:
+    *   2 lignes pour séparer fonctions et classes.
+    *   1 ligne pour séparer les méthodes dans une classe.
+*   **Encodage**: UTF-8 par défaut en Python 3.
 
+**Exemple de formatage de ligne longue :**
+```python
+# Bonne pratique: alignement vertical ou indentation suspendue
+def ma_super_fonction_avec_un_nom_tres_long(
+        param1, param2, param3,
+        param4, param5, param6):
+    print("Hello")
 
-##==##
-
-<!-- .slide: -->
-
-# Pour aller plus loin - 10
-
-**Les bonnes pratiques - disposition du code**
-
-* Un seul import par ligne.
-* Les imports doivent être groupés dans l’ordre suivant :
-  * imports des librairies standards
-  * imports des librairies tierces
-  * imports
-* Préférer les imports absolus aux relatifs.
-* Éviter d’importer un module en entier avec *
-
+# Opérateurs en début de ligne pour la lisibilité
+total = (valeur_un
+         + valeur_deux
+         - valeur_trois)
+```
 
 ##==##
 
@@ -52,13 +48,45 @@
 
 # Pour aller plus loin - 10
 
-**Les bonnes pratiques - disposition du code**
+**Les bonnes pratiques - imports 👍**
+```python
+# 1. Librairies standards (alphabétique)
+import json
+import os
 
-* Il est possible d’utiliser des ‘ ou “ pour les strings, mais garder la même convention.
-* Pas d’espace avant ou après les parenthèses.
-* Après une virgule toujours un espace.
-* Pas plus d’un espace pour les assignations.
-* Pas d’espace inutile à la fin des lignes.
+# 2. Librairies tierces (alphabétique)
+import requests
+from fastapi import FastAPI
+
+# 3. Modules locaux (alphabétique)
+from my_app import models
+from my_app.utils import helper
+```
+**À éviter 👎**
+```python
+# Imports groupés et désordonnés
+import requests, os # NON
+from math import * # NON
+
+# Imports relatifs peu clairs
+from .. import utils # NON
+```
+
+##==##
+
+<!-- .slide: -->
+
+# Pour aller plus loin - 10
+
+**Les bonnes pratiques - Espacement & Style**
+
+ Recommandation | Good 👍                | Bad 👎                          |
+|---|------------------------|---------------------------------|
+| Pas d'espaces autour des parenthèses | `print('hello')`       | `print ('hello')`               |
+| Espace après une virgule | `ma_liste = [1, 2, 3]` | `ma_liste = [1,2,3]`            |
+| Un seul espace pour l'assignation | `x_=_1`                | `x__=__1`                       |
+| Cohérence des guillemets | `name = "Sfeir"`       | `name = 'Sfeir' # Inconsistant` |
+| Pas d'espace en fin de ligne | `ma_ligne()`           | `ma_ligne() `                   |
 
 
 ##==##
@@ -74,14 +102,6 @@
 ```python
 # First line
 # Second line
-```
-
-<!-- .element: class="big-code" -->
-
-* Un commentaire de ligne doit être précédé de 2 espaces :
-
-```python
-x = x + 1  # Compensate for border
 ```
 
 <!-- .element: class="big-code" -->
@@ -110,15 +130,14 @@ Commentaire (bloc ou ligne) : utile pour les détails d’implémentation.
 
 **Les bonnes pratiques - conventions de nommage**
 
-* Variable : ne pas utiliser “l”, “O”, ou “I” comme unique caractère.
-* Package et module : nom court, en minuscule, avec des _
-* Classe : utiliser des majuscules pour séparer les mots.
-* Exception : même convention, ajouter “Error” à la fin si nécessaire.
-* Fonction et variable : en minuscule, mots séparés par des _
-* Méthodes d’instance et de classe :
-  * utiliser self / cls comme premier argument
-  * si conflit avec un mot clé natif, ajouter un _ ou utiliser un synonyme
-* Constante : en majuscule
+| Type | Convention | Exemple |
+|---|---|---|
+| Variable, Fonction, Module | `snake_case` | `ma_variable`, `calculer_total()` |
+| Classe, Exception | `PascalCase` | `MaClasse`, `ValeurInvalideError` |
+| Constante | `UPPER_CASE` | `MA_CONSTANTE`, `TIMEOUT = 30` |
+| Méthode d'instance | `self` en 1er | `def get_name(self):` |
+| Méthode de classe | `cls` en 1er | `def from_config(cls, config):` |
+
 
 
 ##==##
@@ -129,8 +148,8 @@ Commentaire (bloc ou ligne) : utile pour les détails d’implémentation.
 
 **Les bonnes pratiques - programmation**
 
-* Comparaison avec None : utiliser “is” ou “is not”.
-* Comparaison avec une classe : implémenter toujours l’ensemble des opérateurs.
-* Function vs lambda : préférer des fonctions nommées, plus facile pour les erreurs.
-* try/catch : dans la mesure du possible, catcher l’exception la plus fine possible.
-* Retour de fonction : être consistant (toujours une valeur du même type ou None).
+| Pratique | Good 👍 | Bad 👎 |
+|---|---|---|
+| Comparer à `None` | `if my_var is None:` | `if my_var == None:` |
+| Exceptions spécifiques | `except ValueError:` | `except Exception:` |
+| Retours consistants | `return value` ou `return None` | Retours de types mixtes |

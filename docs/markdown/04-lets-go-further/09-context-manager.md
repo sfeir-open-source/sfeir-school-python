@@ -4,11 +4,10 @@
 
 **Les classes - context manager**
 
-- C’est généralement une classe.
-- On l’utilise avec le mot clé “with”.
-- Permet de visualiser la portion de code concernée.
-- Permet de réutiliser les actions faites à l’entrée et à la sortie.
-- L’action de sortie est toujours exécutée même en cas d’exception (correspond globalement au mot clé “finally”).
+* Gère des ressources (fichiers, connexions, etc.).
+* S'utilise avec le mot-clé `with`.
+* Automatise les actions d'initialisation et de nettoyage.
+* Garantit le nettoyage même en cas d'erreur (similaire à `finally`).
 
 ##==##
 

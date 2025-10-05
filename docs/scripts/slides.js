@@ -70,7 +70,11 @@ function letsGoFurtherSlides() {
 }
 
 function fastApi() {
-  return ['05-fastapi/00-TITLE.md', '05-fastapi/01-steps.md'];
+  return [
+    '05-fastapi/00-TITLE.md',
+    '05-fastapi/01-steps.md',
+    '05-fastapi/02-fastmcp.md',
+  ];
 }
 
 function conclusionSlides() {

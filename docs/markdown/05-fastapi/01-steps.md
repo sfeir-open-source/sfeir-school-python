@@ -5,9 +5,9 @@
 **FastAPI**
 
 - Framework Web Python 3.6+ pour la création d’API (synchrone ou non).
-- Très rapide, rapide à coder, facile à utiliser et apprendre
+- Rapide à coder
 - Annotations de type
-- Documentation automatique
+- Documentation automatique (swagger)
 
 ![](./assets/images/fastapi.png 'center')
 
@@ -87,7 +87,7 @@ Utilisé par Microsoft, AWS, la NSA, Uber et Jupyter.
 
 
 <!-- .slide: class="exercice" -->
-
+<!-- .slide: style="font-size: 0.8em;" -->
 # API Python
 
 ## TP
@@ -123,7 +123,7 @@ Utilisé par Microsoft, AWS, la NSA, Uber et Jupyter.
 
 
 <!-- .slide: class="exercice" -->
-
+<!-- .slide: style="font-size: 0.8em;" -->
 # API Python
 
 ## TP

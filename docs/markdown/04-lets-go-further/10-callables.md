@@ -4,10 +4,9 @@
 
 # Pour aller plus loin - 08
 
-**Les classes - callable (comme une fonction)**
+**Les classes - callable**
 
-<br>
-
+* Rendre un objet "appelable" comme une fonction.
 ```python
 class Animal(object):
   def __init__(self, name, age):
@@ -25,7 +24,7 @@ class Animal(object):
 
 ##++## class="with-code"
 
-<br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br>
 
 ```python
 a = Animal('Maya', 20)

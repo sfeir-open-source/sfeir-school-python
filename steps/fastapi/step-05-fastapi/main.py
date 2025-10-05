@@ -53,3 +53,15 @@ async def create_message(message: MessagePost) -> MessageGet:
   query = f"INSERT INTO messages (author, message) VALUES ('{message.author}', '{message.message}')"
   created_id = await database.execute(query)
   return await get_message(created_id)
+
+@app.get("/messages")
+async def get_all_messages() -> list[MessageGet]:
+  pass
+
+@app.put("/message/{message_id}")
+async def update_message(message_id, messageUpdated: MessageUpdate) -> MessageGet:
+  pass
+
+@app.delete("/message/{message_id}")
+async def delete_message(message_id):
+  pass

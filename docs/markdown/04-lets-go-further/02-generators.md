@@ -4,13 +4,11 @@
 
 **Le générateur**
 
-* Une fonction qui permet de produire une valeur à la fois.
 * C’est le mot clé “yield” qui s’utilise à la place de “return”.
 * “yield” ne stoppe pas l’exécution de la fonction.
 * “yield” permet d’envoyer une valeur pour celui qui consomme.
 * La fonction s’arrête une fois que tout a été consommé.
 * A ce moment là une exception “StopIteration” est levée.
-
 
 ##==##
 
@@ -27,73 +25,7 @@ def simple_generator():
   yield 1
   yield 2
   yield 3
-```
-
-<!-- .element: class="big-code" -->
-
-
-##==##
-
-<!-- .slide: -->
-
-# Pour aller plus loin - 02
-
-**Le générateur**
-
-* Les avantages :
-  * Consomme moins de mémoire : un élément à chaque fois.
-  * Le résultat peut dépendre de facteurs externes.
-  * Lazy : uniquement ce qui est nécessaire est calculé.
-  * Simple à écrire.
-
-Notes:
-The following are most important advantages of generators
-
-Memory usage. Items can be processed one at a time, so there is generally no need to keep the entire list in memory.
-
-The results can depend on outside factors, instead of having a static list.
-
-Generators are lazy. This means that if you're using only the first five results of a generator, the rest won't even be calculated.
-
-Generally, it is simpler to write than list generating functions.
-
-
-##==##
-
-<!-- .slide: -->
-
-# Pour aller plus loin - 02
-
-**Le générateur**
-
-* Les inconvénients :
-  * Le résultat n’est disponible qu’une fois.
-  * Impossible de connaître la taille totale.
-  * Impossible d'indexer le générateur.
-
-Notes:
-The following are most important disadvantages of generators
-
-The results are available only once. After processing the results of a generator, it cannot be used again.
-
-The size is unknown until you are done processing, which can be detrimental to certain algorithms.
-
-Generators are not indexable, which means that simple_generator_function[2] will not work.
-
-
-##==##
-
-<!-- .slide: class="with-code" -->
-
-# Pour aller plus loin - 02
-
-**Le générateur**
-
-* Comment ça marche ?
-
-```python
 g = simple_generator()
-
 next(g)  # 1
 next(g)  # 2
 next(g)  # 3
@@ -114,22 +46,71 @@ Generators are not indexable, which means that simple_generator_function[2] will
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: -->
 
 # Pour aller plus loin - 02
 
 **Le générateur**
 
-* Le générateur retourne un itérable :
+* Les avantages :
+  * Efficace en mémoire (lazy evaluation = retourne un élément à la fois).
+  * Code plus simple et lisible pour les flux de données.
+  * Permet de gérer des séquences infinies.
+    * `def fibonacci(): ... while True: yield ...`
+
+
+##==##
+
+<!-- .slide: class="tc-multiple-columns" -->
+
+##++##
+
+## Efficacité: Itérateur...
 
 ```python
-for i in simple_generator():
-  print(i)
+def find_errors_in_log(file_path):
+    with open(file_path) as f:
+        # Tente de charger 10Go en mémoire
+        lines = f.readlines()
+    for line in lines:
+        if "ERROR" in line:
+            print(line)
 
-list(simple_generator())
+# -> Crash! (MemoryError)
+```      
+      
+##++##
+
+##++##
+
+## ... vs Générateur
+
+```python
+def read_log_lines(file_path):
+    with open(file_path) as f:
+        for line in f:
+            # Ne charge qu'une ligne à la fois
+            yield line
+
+for line in read_log_lines("huge.log"):
+    if "ERROR" in line:
+        print(line)
+
+# -> Fonctionne parfaitement !
 ```
 
-<!-- .element: class="big-code" -->
+##++##
 
-Notes:
-Le mécanisme de “StopIteration” est automatique géré par la boucle
+##==##
+
+<!-- .slide: -->
+
+# Pour aller plus loin - 02
+
+**Le générateur**
+
+* Les inconvénients :
+  * Le résultat n’est disponible qu’une fois.
+  * Impossible de connaître la taille totale.
+  * Impossible d'indexer le générateur.
+

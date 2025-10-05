@@ -37,7 +37,7 @@ async def database_disconnect():
 
 
 @app.get("/")
-def root():
+async def root():
     return {"message": "Hello world!"}
 
 

@@ -58,7 +58,7 @@ async def create_message(message: MessagePost) -> MessageGet:
 
 
 @app.get("/messages")
-async def get_all_messages() -> [MessageGet]:
+async def get_all_messages() -> list[MessageGet]:
     query = f"SELECT * FROM messages"
     results = await database.fetch_all(query=query)
     return results

@@ -68,3 +68,9 @@ typings/
 
 #Dev
 docs/test.html
+
+uv.lock
+test.db
+__pycache__
+.venv
+.idea/
