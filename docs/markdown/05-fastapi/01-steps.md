@@ -60,28 +60,27 @@ Documentation automatique : FastAPI génère la documentation en format Swagger 
 
 - Validation des données et gestion des paramètres à l'aide des annotations de type.
 - Applique les annotations à l'exécution et génère des erreurs si les données ne sont pas valides.
-- Totalement compatible avec FastAPI
+- Retourne les erreurs de validation sous forme de JSON dans une FastAPI
 
 ```python
 from pydantic import BaseModel
-
 class Car(BaseModel):
     color: str
     gears: int
 
-good = Car(color="blue", gears=4)
-# color='blue' gears=4
-
 not_good = Car(color=['b', 'l', 'u', 'e'], gears=4)
-# pydantic.error_wrappers.ValidationError: 1 validation error for Car
-# color
-#    str type expected (type=type_error.str)
-
 ```
-
-Notes:
-Utilisé par Microsoft, AWS, la NSA, Uber et Jupyter.
-
+```json
+{
+  "detail": [
+    {
+      "loc": [ "body", "color" ],
+      "msg": "str type expected",
+      "type": "type_error.str"
+    }
+  ]
+}
+```
 
 ##==##
 

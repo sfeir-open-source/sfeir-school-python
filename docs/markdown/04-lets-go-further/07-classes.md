@@ -33,6 +33,21 @@ maya.eat()
 <!-- .element: class="big-code" -->
 
 ##==##
+<!-- .slide: -->
+
+# Pour aller plus loin - 06
+
+**Les classes - méthodes spéciales (dunder)**
+
+- Les méthodes avec des noms qui commencent et se terminent par un double underscore sont appelées "méthodes spéciales" ou "méthodes magiques".
+- On les appelle aussi "dunder methods" (de l'anglais double underscore).
+- Elles permettent de surcharger le **comportement** par défaut de Python.
+  -  `__init__` pour l'initialisation d'objet.
+  -  `__add__` pour l'opérateur +.
+  -  `__repr__` pour la représentation de l'objet.
+- On ne les appelle généralement pas directement (ex: a + b au lieu de a.__add__(b)).
+
+##==##
 
 <!-- .slide: class="with-code" -->
 
@@ -51,7 +66,7 @@ class Giraffe(object):
   def eat(self):
     print('{} is eating.'.format(self.name))
 
-maya = Giraffe('Maya')
+maya = Giraffe('Maya') 
 ```
 
 <!-- .element: class="big-code" -->
@@ -75,9 +90,11 @@ class Animal(object):
 class Giraffe(Animal):
   def eat_leaves(self):
     print('{} is eating some leaves.'.format(self.name))
+maya = Giraffe('Maya')
+maya.drink() # nous pouvons utiliser les méthodes de la classe parente
+maya.eat() # idem
+maya.eat_leaves() # "spécialisation" d'une Giraffe par rapport à un Animal.
 ```
-
-<!-- .element: class="big-code" -->
 
 Notes: On peut hériter de plusieurs classes
 
@@ -139,19 +156,25 @@ print(a.age)  # 10
 **Les classes - classmethod**
 
 * @classmethod : reçoit la classe en 1er paramètre (cls). 
-* Utile pour les "factory" qui fonctionnent avec l'héritage.
+* Utile pour les "factory" qui fonctionnent avec l'héritage, pour faire des constructeurs alternatifs.
 ```python
-class Animal(object):
-  max_age = 200
-  def __init__(self, name):
-    self.name = name
-  @classmethod
-  def display_max_age(cls):
-    print('Animal max age is: {}'.format(cls.max_age))
+import json
 
-g = Animal('Maya')
-g.display_max_age()
-Animal.display_max_age()
+class Animal(object):
+  def __init__(self, name, age):
+    self.name = name
+    self.age = age
+
+  @classmethod
+  def from_file(cls, filename):
+    # Crée une instance à partir d'un fichier JSON
+    # Le fichier animal.json contiendrait : ["Maya", 5]
+    with open(filename) as f:
+        data = json.load(f)
+        return cls(*data)
+
+maya = Animal('Maya', 5) # constructeur normal
+maya_from_file = Animal.from_file('animal.json') # alternate constructor
 ```
 
 ##==##
