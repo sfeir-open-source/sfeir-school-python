@@ -56,8 +56,14 @@ Generators are not indexable, which means that simple_generator_function[2] will
   * Efficace en mémoire (lazy evaluation = retourne un élément à la fois).
   * Code plus simple et lisible pour les flux de données.
   * Permet de gérer des séquences infinies.
-    * `def fibonacci(): ... while True: yield ...`
-
+  
+```python
+def fibonacci():
+    a, b = 0, 1
+    while True:
+        yield a
+        a, b = b, a + b
+```
 
 ##==##
 

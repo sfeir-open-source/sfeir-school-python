@@ -4,10 +4,11 @@
 
 **FastAPI**
 
-- Framework Web Python 3.6+ pour la création d’API (synchrone ou non).
-- Rapide à coder
-- Annotations de type
-- Documentation automatique (swagger)
+- **Rapide** : Performances élevées, comparables à NodeJS et Go.
+- **Moderne** : Typage Python qui réduit les bugs.
+- **Auto-documenté** : Génère une documentation interactive (Swagger UI).
+- **Robuste** : Validation des données puissante et automatique.
+- **Asynchrone** : Idéal pour la haute concurrence (async/await).
 
 ![](./assets/images/fastapi.png 'center')
 
