@@ -20,7 +20,9 @@ a['key1'] // a.get('key1') // a.get('key3', 'abc')  # abc
 Notes:
 Rappel : les dictionnaires ne sont pas ordonnés.
 
+
 ##==##
+
 <!-- .slide: class="with-code" -->
 
 # Les bases - 03
@@ -46,7 +48,9 @@ Reversed : générateur, il faut itérer pour avoir la liste
 
 sorted : renvoie la liste triée (pas de générateur)
 
+
 ##==##
+
 <!-- .slide: class="with-code" -->
 
 # Les bases - 03
@@ -60,7 +64,7 @@ B = {4, 5, 6, 7, 8}
 
 <!-- .element: class="big-code" -->
 
-![center h-600](./assets/images/set_operations.png)
+![](./assets/images/set_operations.png 'center h-600')
 
 Notes:
 union

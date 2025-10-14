@@ -5,14 +5,17 @@
 **Les exceptions**
 
 * Une exception est une erreur qui met fin au programme.
+* C’est le mécanisme usuel pour gérer une erreur attendue du programme.
 * Toutes les exceptions ont pour classe parente “BaseException”.
 * Il y a 4 grandes classes d’exception :
-  * SystemExit : à l’appel de “sys.exit” ; pas de stacktrace
-  * KeyboardInterrupt : interruption du programme
-  * GeneratorExit : méthode “close” du générateur
-  * Exception : les erreurs générées par le programme
+  * `SystemExit`: `sys.exit()`
+  * `KeyboardInterrupt`: Ctrl+C
+  * `GeneratorExit`: `generator.close()`
+  * `Exception`: Erreurs "classiques" (`ValueError`, `TypeError`...)
+
 
 ##==##
+
 <!-- .slide: -->
 
 # Les bases - 08
@@ -28,28 +31,37 @@
 | BufferError | NameError | ValueError |
 | EnvironmentError | ReferenceError | Warning |
 
+
 ##==##
+
 <!-- .slide: class="with-code" -->
 
 # Les bases - 08
 
 **Les exceptions**
 
-* C’est le mécanisme usuel pour renvoyer une erreur.
-* Il est courant de déclarer sa propre exception :
+* Créer ses propres exceptions permet de capturer des erreurs métier spécifiques.
 
 ```python
 class MyCustomException(Exception):
   pass
 ```
 
+* Depuis Python 3.11, on peut ajouter des notes pour enrichir le contexte.
+
+```python
+try:
+    raise TypeError("Oups")
+except TypeError as e:
+    e.add_note("Information contextuelle supplémentaire")
+    raise
+```
 <!-- .element: class="big-code" -->
 
 <br>
 
-* Cela permet de faciliter la gestion d’erreur.
-
 ##==##
+
 <!-- .slide: class="with-code" -->
 
 # Les bases - 08

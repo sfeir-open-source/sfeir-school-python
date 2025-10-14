@@ -4,22 +4,22 @@
 
 **Les classes - context manager**
 
-* C’est généralement une classe.
-* On l’utilise avec le mot clé “with”.
-* Permet de visualiser la portion de code concernée.
-* Permet de réutiliser les actions faites à l’entrée et à la sortie.
-* L’action de sortie est toujours exécutée même en cas d’exception (correspond globalement au mot clé “finally”).
+* Gère des ressources (fichiers, connexions, etc.).
+* S'utilise avec le mot-clé `with`.
+* Automatise les actions d'initialisation et de nettoyage.
+* Garantit le nettoyage même en cas d'erreur (similaire à `finally`).
 
 ##==##
-<!-- .slide: class="with-code two-column-layout" -->
+
+<!-- .slide: class="with-code tc-multiple-columns" -->
+
+##++##
 
 # Pour aller plus loin - 07
 
 **Les classes - context manager**
 
-##--##
-
-<br><br>
+<br>
 
 ```python
 class MyContextManager(object):
@@ -30,9 +30,11 @@ class MyContextManager(object):
     print("After")
 ```
 
-##--##
+##++##
 
-<br><br>
+##++## class="with-code"
+
+<br><br><br><br><br><br>
 
 ```python
 with MyContextManager():
@@ -43,17 +45,20 @@ with MyContextManager():
 # After
 ```
 
+##++##
+
 ##==##
-<!-- .slide: class="with-code two-column-layout" -->
+
+<!-- .slide: class="with-code tc-multiple-columns" -->
+
+##++##
 
 # Pour aller plus loin - 07
 
 **Les classes - context manager**
 
-##--##
-
-<br><br>
-Sans context manager: 
+<br>
+Sans context manager:
 
 ```python
 import os
@@ -67,11 +72,14 @@ while line:
 file.close() # Close file
 ```
 
-##--##
+##++##
 
-<br><br>
+##++## class="with-code"
 
-Avec context manager: 
+<br><br><br><br><br><br>
+
+Avec context manager:
+
 ```python
 with open(file_path, mode='r') as file: # Open and Close file
   # Reading the file line by line.
@@ -80,3 +88,5 @@ with open(file_path, mode='r') as file: # Open and Close file
     print(line)
     line = file.readline()
 ```
+
+##++##

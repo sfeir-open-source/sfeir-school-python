@@ -4,8 +4,8 @@
 
 **La list comprehension**
 
-* C’est une manière de créer une liste à partir d’un itérable.
-* Elle doit au minimum contenir une clause “for”.
+- C’est une manière de créer une liste à partir d’un itérable.
+- Elle doit au minimum contenir une clause “for”.
 
 ```python
 result = [x for x in iterable ... if condition ...]
@@ -13,18 +13,19 @@ result = [x for x in iterable ... if condition ...]
 
 <!-- .element: class="big-code" -->
 
-* Il peut y avoir plusieurs boucles et plusieurs conditions.
+- Il peut y avoir plusieurs boucles et plusieurs conditions.
 
 ##==##
-<!-- .slide: class="with-code two-column-layout" -->
+
+<!-- .slide: class="with-code tc-multiple-columns" -->
+
+##++##
 
 # Pour aller plus loin - 05
 
 **La list comprehension**
 
-* Comment remplacer le code suivant avec une list comprehension ?
-
-##--##
+- Comment remplacer le code suivant avec une list comprehension ?
 
 <br><br><br>
 
@@ -35,9 +36,11 @@ for letter in 'chaine':
   letters.append(letter)
 ```
 
-##--##
+##++##
 
-<br><br><br>
+##++## class="with-code"
+
+<br><br><br><br><br><br><br><br><br><br><br>
 
 ```python
 print(letters)
@@ -45,14 +48,17 @@ print(letters)
 # ['c', 'h', 'a', 'i', 'n', 'e']
 ```
 
+##++##
+
 ##==##
+
 <!-- .slide: class="with-code" -->
 
 # Pour aller plus loin - 05
 
 **La list comprehension**
 
-* Comment remplacer le code suivant avec une list comprehension ?
+- Comment remplacer le code suivant avec une list comprehension ?
 
 ```python
 letters = [letter for letter in 'chaine']
@@ -61,13 +67,14 @@ letters = [letter for letter in 'chaine']
 <!-- .element: class="big-code" -->
 
 ##==##
+
 <!-- .slide: class="with-code" -->
 
 # Pour aller plus loin - 05
 
 **La list comprehension**
 
-* Set comprehension
+- Set comprehension
 
 ```python
 letters = {letter for letter in 'aaaaaab' if letter == "a"}

@@ -13,7 +13,9 @@ $ git clone https://github.com/sfeir-open-source/sfeir-school-python.git
 Notes:
 En récupérant ce repository, vous remarquerez que vous avez un dossier par étape, que nous allons voir au fur et à mesure de la formation. Un dossier avec les solutions de chaque étape est également disponible pour vous inspirer si vous êtes bloqué sur une étape précise.
 
+
 ##==##
+
 <!-- .slide: -->
 
 # Déroulement de la formation

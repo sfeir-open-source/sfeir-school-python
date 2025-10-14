@@ -20,7 +20,9 @@ if condition:
 Notes:
 Parler des keywords “pass” / “del”
 
+
 ##==##
+
 <!-- .slide: -->
 
 # Les bases - 06
@@ -38,7 +40,9 @@ Parler des keywords “pass” / “del”
 | **`>=`**      | greater than or equal | `x` **`and`** `y`  | and       |
 | **`not`** `a` | not                   |                    |           |
 
+
 ##==##
+
 <!-- .slide: class="with-code" -->
 
 # Les bases - 06
@@ -62,7 +66,9 @@ else:
 Notes:
 Pas de switch => possibilité de faire une seule ligne en cas d’assignation ou autre.
 
+
 ##==##
+
 <!-- .slide: -->
 <!-- .slide: class="with-code" -->
 
@@ -79,7 +85,9 @@ is_positive = True if value >= 0 else False
 
 <!-- .element: class="big-code" -->
 
+
 ##==##
+
 <!-- .slide: class="with-code" -->
 # Les bases - 06
 

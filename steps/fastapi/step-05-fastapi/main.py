@@ -3,6 +3,7 @@ import datetime
 from fastapi import FastAPI, HTTPException
 from databases import Database
 from pydantic import BaseModel
+from contextlib import asynccontextmanager
 
 
 class MessagePost(BaseModel):
@@ -23,16 +24,16 @@ class MessageGet(BaseModel):
 
 database = Database("sqlite:///../test.db")
 
-app = FastAPI()
-
-@app.on_event("startup")
-async def database_connect():
+@asynccontextmanager
+async def lifespan(app: FastAPI):
     await database.connect()
+    try:
+        yield
+    finally:
+        await database.disconnect()
 
-@app.on_event("shutdown")
-async def database_disconnect():
-    await database.disconnect()
 
+app = FastAPI(lifespan=lifespan)
 
 @app.get("/")
 async def root():
@@ -53,3 +54,15 @@ async def create_message(message: MessagePost) -> MessageGet:
   query = f"INSERT INTO messages (author, message) VALUES ('{message.author}', '{message.message}')"
   created_id = await database.execute(query)
   return await get_message(created_id)
+
+@app.get("/messages")
+async def get_all_messages() -> list[MessageGet]:
+  pass
+
+@app.put("/message/{message_id}")
+async def update_message(message_id, messageUpdated: MessageUpdate) -> MessageGet:
+  pass
+
+@app.delete("/message/{message_id}")
+async def delete_message(message_id):
+  pass

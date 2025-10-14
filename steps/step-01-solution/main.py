@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-
-"""
-To-Do application
-"""
-
 def concat(input_1, input_2):
     if type(input_1) != type(input_2):
         raise Exception("Concat is not possible")

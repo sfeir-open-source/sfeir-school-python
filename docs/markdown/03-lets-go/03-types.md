@@ -25,7 +25,9 @@ Exemple : (10, 12) => page 10, ligne 12
 
 [12, 13, 14] => liste de pages
 
+
 ##==##
+
 <!-- .slide: -->
 
 # Les bases - 02

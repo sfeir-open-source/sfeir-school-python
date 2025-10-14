@@ -1,15 +1,16 @@
-<!-- .slide: class="with-code" -->
+<!-- .slide: -->
 
-# Les bases - 10
+# Les bases - 09
 
-**Les packages**
+**Module vs Package**
 
-* Permet d’organiser le projet en dossier.
-* Pour créer un package : il suffit de créer un fichier vide \_\_init\_\_.py.
+| Module | Package |
+| --- | --- |
+| Un fichier `.py` | Un dossier de modules |
+| `import my_module` | `from my_package import my_module` |
+
+* Package : permet de structurer et d’organiser le projet en dossier.
+* Un package doit contenir un `__init__.py` (bonne pratique).
 * Possibilité d’exécuter le code d’un package :
   * doit contenir un fichier \_\_main\_\_.py
   * `$ python -m mon_package`
-
-Notes:
-Package = ensemble de modules
-

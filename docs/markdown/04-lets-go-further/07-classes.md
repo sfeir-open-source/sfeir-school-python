@@ -4,12 +4,13 @@
 
 **Les classes**
 
-* Python est aussi un langage orienté objet.
-* Petit rappel, il faut bien faire la différence entre :
-  * une classe : structure partageant des propriétés
-  * un objet : une instance de la classe
+- Python est aussi un langage orienté objet.
+- Petit rappel, il faut bien faire la différence entre :
+  - une classe : structure partageant des propriétés
+  - un objet : une instance de la classe
 
 ##==##
+
 <!-- .slide: class="with-code" -->
 
 # Pour aller plus loin - 06
@@ -32,6 +33,22 @@ maya.eat()
 <!-- .element: class="big-code" -->
 
 ##==##
+<!-- .slide: -->
+
+# Pour aller plus loin - 06
+
+**Les classes - méthodes spéciales (dunder)**
+
+- Les méthodes avec des noms qui commencent et se terminent par un double underscore sont appelées "méthodes spéciales" ou "méthodes magiques".
+- On les appelle aussi "dunder methods" (de l'anglais double underscore).
+- Elles permettent de surcharger le **comportement** par défaut de Python.
+  -  `__init__` pour l'initialisation d'objet.
+  -  `__add__` pour l'opérateur +.
+  -  `__repr__` pour la représentation de l'objet.
+- On ne les appelle généralement pas directement (ex: a + b au lieu de a.__add__(b)).
+
+##==##
+
 <!-- .slide: class="with-code" -->
 
 # Pour aller plus loin - 06
@@ -49,12 +66,13 @@ class Giraffe(object):
   def eat(self):
     print('{} is eating.'.format(self.name))
 
-maya = Giraffe('Maya')
+maya = Giraffe('Maya') 
 ```
 
 <!-- .element: class="big-code" -->
 
 ##==##
+
 <!-- .slide: class="with-code" -->
 
 # Pour aller plus loin - 06
@@ -65,33 +83,32 @@ maya = Giraffe('Maya')
 class Animal(object):
   def __init__(self, name):
     self.name = name
-
   def drink(self):
     print('{} is drinking.'.format(self.name))
-
   def eat(self):
     print('{} is eating.'.format(self.name))
-
-class Giraffe(Animal): 
+class Giraffe(Animal):
   def eat_leaves(self):
     print('{} is eating some leaves.'.format(self.name))
+maya = Giraffe('Maya')
+maya.drink() # nous pouvons utiliser les méthodes de la classe parente
+maya.eat() # idem
+maya.eat_leaves() # "spécialisation" d'une Giraffe par rapport à un Animal.
 ```
 
-<!-- .element: class="big-code" -->
 Notes: On peut hériter de plusieurs classes
 
 ##==##
-<!-- .slide: class="with-code" -->
 
-<!-- .slide: class="with-code two-column-layout" -->
+<!-- .slide: class="with-code tc-multiple-columns" -->
+
+##++##
 
 # Pour aller plus loin - 06
 
 **Les classes - getter / setter**
 
-##--##
-
-<br><br>
+<br>
 
 ```python
 class Animal(object):
@@ -112,9 +129,11 @@ class Animal(object):
       print('{} is too old!'.format(self.name))
 ```
 
-##--##
+##++##
 
-<br><br>
+##++## class="with-code"
+
+<br><br><br><br><br><br>
 
 ```python
 a = Animal('Maya')
@@ -126,38 +145,47 @@ a.age = 500  # Maya is too old!
 print(a.age)  # 10
 ```
 
+##++##
+
 ##==##
+
 <!-- .slide: class="with-code" -->
 
 # Pour aller plus loin - 06
 
 **Les classes - classmethod**
 
+* @classmethod : reçoit la classe en 1er paramètre (cls). 
+* Utile pour les "factory" qui fonctionnent avec l'héritage, pour faire des constructeurs alternatifs.
 ```python
-class Animal(object):
-  max_age = 200
-  def __init__(self, name):
-    self.name = name
-  @classmethod
-  def display_max_age(cls):
-    print('Animal max age is: {}'.format(cls.max_age))
+import json
 
-g = Animal('Maya')
-g.display_max_age()
-Animal.display_max_age()
+class Animal(object):
+  def __init__(self, name, age):
+    self.name = name
+    self.age = age
+
+  @classmethod
+  def from_file(cls, filename):
+    # Crée une instance à partir d'un fichier JSON
+    # Le fichier animal.json contiendrait : ["Maya", 5]
+    with open(filename) as f:
+        data = json.load(f)
+        return cls(*data)
+
+maya = Animal('Maya', 5) # constructeur normal
+maya_from_file = Animal.from_file('animal.json') # alternate constructor
 ```
 
-<!-- .element: class="big-code" -->
-
-Notes:
-On peut accéder à une variable de classe avec une classmethod.
-
 ##==##
-<!-- .slide: class="with-code two-column-layout" -->
+
+<!-- .slide: class="with-code" -->
 
 # Pour aller plus loin - 06
 
 **Les classes - staticmethod**
+
+* @staticmethod : Fonction utilitaire liée à la classe.
 
 ```python
 from datetime import date
@@ -173,61 +201,17 @@ class Animal(object):
 age = Animal.get_age_from_year(2000)  # 18
 ```
 
-<!-- .element: class="big-code" -->
-
 ##==##
-<!-- .slide: class="with-code two-column-layout" -->
 
-# Pour aller plus loin - 06
+<!-- .slide: class="with-code tc-multiple-columns" -->
 
-**Les classes - classmethod vs staticmethod**
-
-##--##
-
-<br><br>
-
-```python
-from datetime import date
-
-class Animal(object):
-  def __init__(self, name, age):
-    self.name = name
-    self.age = age
-
-  @classmethod
-  def from_year(cls, name, year):
-    return cls(name, date.today().year - year)
-
-  @staticmethod
-  def from_name(name):
-    return Animal(name, 0)
-```
-
-##--##
-
-<br><br>
-
-```python
-class Giraffe(Animal):
-  pass
-
-a = Giraffe.from_year('Maya', 2017)
-print(isinstance(a, Giraffe))  # True
-
-b = Giraffe.from_name('Maya')
-print(isinstance(b, Giraffe))  # False
-```
-
-##==##
-<!-- .slide: class="with-code two-column-layout" -->
+##++##
 
 # Pour aller plus loin - 06
 
 **Les classes - représentation**
 
-##--##
-
-<br><br>
+<br>
 
 ```python
 class Animal(object):
@@ -245,9 +229,11 @@ class Animal(object):
     return '{}: {} years old'.format(self.name, self.age)
 ```
 
-##--##
+##++##
 
-<br><br>
+##++## class="with-code"
+
+<br><br><br><br><br><br>
 
 ```python
 a = Animal('Maya', 20)
@@ -264,16 +250,17 @@ print([a, b])
 # Apres - [Animal('Maya', 20), Animal('Jojo', 100)]
 ```
 
+##++##
+
 ##==##
-<!-- .slide: class="with-code two-column-layout" -->
+
+<!-- .slide: class="with-code tc-multiple-columns" -->
+
+##++##
 
 # Pour aller plus loin - 06
 
 **Les classes - surcharge des opérateurs**
-
-##--##
-
-<br><br>
 
 ```python
 class Animal(object):
@@ -301,9 +288,11 @@ class Animal(object):
     return '{}: {} years old'.format(self.name, self.age)
 ```
 
-##--##
+##++##
 
-<br><br>
+##++## class="with-code"
+
+<br><br><br><br><br>
 
 ```python
 a = Animal('Maya', 10)
@@ -314,19 +303,21 @@ print(b)  # Jojo: 20 years old
 print(a + b)  # Maya + Jojo: 30 years old
 ```
 
+##++##
+
 Notes:
 N.B. : il est également possible de surcharger les opérateurs de comparaison.
-
 ##==##
-<!-- .slide: class="with-code two-column-layout" -->
+
+<!-- .slide: class="with-code tc-multiple-columns" -->
+
+##++##
 
 # Pour aller plus loin - 06
 
 **Les classes - conversion**
 
-##--##
-
-<br><br>
+<br>
 
 ```python
 class Animal(object):
@@ -347,9 +338,11 @@ class Animal(object):
     return self.name
 ```
 
-##--##
+##++##
 
-<br><br>
+##++## class="with-code"
+
+<br><br><br><br><br><br>
 
 ```python
 a = Animal('Maya', 2)
@@ -360,3 +353,5 @@ print(float(a))  # 2.0
 print(str(a))  # Maya
 print(l[a])  # 30
 ```
+
+##++##

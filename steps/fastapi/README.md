@@ -6,11 +6,30 @@
 
 ### Installation des dépendances
 
-L'API va utiliser différents modules Python. S'ils ne sont pas installés sur votre machine, vous pouvez les installer avec la commande suivante `python -m pip install -r requirements.txt`.
+#### Méthode classique
+
+```bash
+python --version ## just verify you currently use the python version recommanded by your teacher
+python -m venv .venv
+source .venv/bin/activate #if you use Linux/MacOS.
+.\venv\Scripts\activate #if you use Windows using classic MSDOS Console.
+.\venv\bin\activate #if you use Windows using pycharm terminal or powershell console.
+pip install -r requirements.txt
+uvicorn main:app --reload
+```
+
+#### Méthode moderne
+
+```bash
+uv venv -p python3.12.11 ## if you want to be 100% sure uv will use the targeted python version
+uv sync
+uv run uvicorn main:app --reload
+```
 
 ### Création de la base de données
 
-L'API va se connecter à une base de données pour écrire ou lire du contenu. Pour initialiser la base et créer les tables nécessaires, lancez la commande `python init_db.py`.
+- L'API va se connecter à une base de données pour écrire ou lire du contenu. 
+- Pour initialiser la base et créer les tables nécessaires, lancez la commande `python init_db.py`.
 
 ### Démarrage de l'application
 

@@ -4,7 +4,6 @@
 
 **Les fonctions**
 
-* Une fonction est déclarée à l’aide du mot clé **def** suivi du nom de la fonction.
 * Le corps de la fonction correspond à tout ce qui est indenté dans le même bloc en-dessous.
 
 ```python
@@ -14,7 +13,9 @@ def is_palindrome():
 
 <!-- .element: class="big-code" -->
 
+
 ##==##
+
 <!-- .slide: class="with-code" -->
 
 # Les bases - 04
@@ -24,7 +25,7 @@ def is_palindrome():
 * Une fonction peut prendre zéro ou plusieurs arguments.
 
 ```python
-def is_palindrome(s):
+def is_palindrome(arg1, arg2, arg3):
   pass
 ```
 
@@ -41,7 +42,9 @@ def is_palindrome(s: str) -> bool:
 
 <!-- .element: class="big-code" -->
 
+
 ##==##
+
 <!-- .slide: class="with-code" -->
 
 # Les bases - 04
@@ -62,12 +65,14 @@ def ma_fonction(a, b, c=False, d=None):
 * Dans ce cas là, les paramètres deviennent facultatifs. Il est possible de n’en renseigner que certains en les nommant.
 
 ```python
-ma_fonction(10, 42, 'ok')
+ma_fonction(10, 42)
 ```
 
 <!-- .element: class="big-code" -->
 
+
 ##==##
+
 <!-- .slide: class="with-code" -->
 
 # Les bases - 04
@@ -83,7 +88,9 @@ def is_palindrome(s):
 
 <!-- .element: class="big-code" -->
 
+
 ##==##
+
 <!-- .slide: class="with-code" -->
 
 # Les bases - 04
@@ -101,7 +108,9 @@ def get_xy(s):
 
 <!-- .element: class="big-code" -->
 
+
 ##==##
+
 <!-- .slide: class="with-code" -->
 
 # Les bases - 04

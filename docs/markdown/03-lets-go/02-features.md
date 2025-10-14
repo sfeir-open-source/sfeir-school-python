@@ -4,15 +4,16 @@
 
 **Les spécificités du langage**
 
-* Pas de besoin de créer un exécutable binaire.
-* Typage dynamique.
-* Indentation ! Indentation ! Indentation !
-* Bon à savoir :
-  * Code auto compilé en bytecode (.pyc & .pyo)
+*   Langage interprété (Bon à savoir : Code auto compilé en bytecode (.pyc & .pyo))
+*   Typage dynamique
+*   Indentation pour la structure
+*   Écosystème riche
+
 
 Notes:
-Facts :* Pour distribuer un script python simple, pas besoin de créer un binaire exécutable. Vous pouvez juste transmettre le fichier .py !
-
-* Le typage de Python est dynamique. Cela signifie qu’il ne va faire les vérifications de validité d’opération sur des variables qu’au moment où celles-ci sont utilisés.
-
-* Les blocs de code en python ne sont pas définis entre { } mais par le niveau d’indentation utilisé. Vous aurez un bloc complet pour toutes les instructions indentées avec une tabulation, et un sous bloc pour celles indentées avec 2 tabulations. (Le standard d’intentation recommandé en Python est de 4 espaces, comme définie dans la PEP 8 -- Python Enhancement Proposal)
+*   **Interprété** : Pas de compilation en binaire. Le code est exécuté ligne par ligne.
+*   **Typage** :
+    *   Dynamique : le type d'une variable est vérifié à l'exécution.
+    *   Graduel (optionnel) : possibilité d'ajouter des "type hints" pour la clarté et l'analyse statique.
+*   **Indentation** : Les blocs de code (fonctions, boucles, conditions) sont définis par l'indentation. La norme est de 4 espaces.
+*   **Écosystème** : Vaste bibliothèque standard et des milliers de paquets externes (PyPI) pour tous les besoins (web, data science, IA, etc.).

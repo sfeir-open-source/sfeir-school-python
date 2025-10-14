@@ -12,17 +12,16 @@
   * Changement de coroutine uniquement à un `await`
 
 Notes:
-Le modèle asynchrone a pris beaucoup d’ampleur dans les dernières versions de Python. La bibliothèque asyncio a été ajoutée en Python 3.4, ont suivi les mots-clés async et await en Python 3.5, et d’autres nouveautés dans les versions suivantes.
+- **Modèle asynchrone** : Standard en Python moderne, essentiel pour le web (FastAPI, Django Async).
+- **Coroutine** : Une fonction `async def` qui peut être mise en pause et reprise.
+- **`await`** : Met en pause la coroutine actuelle, permettant à d'autres tâches de s'exécuter.
+- **vs Threads** : `asyncio` est mono-thread, évitant les problèmes du GIL (Global Interpreter Lock) pour la concurrence I/O.
+- **Contrôle** : Le changement de contexte se fait uniquement sur `await`, ce qui rend le code plus prévisible et moins sujet aux race conditions.
+- **Event Loop** : Le "chef d'orchestre" qui gère et exécute les tâches en attente.
 
-On entre dans une fonction en un point et on en sort en un autre point. On peut entrer, sortir et reprendre l'exécution d'une coroutine en plusieurs points.
-
-La première raison est bassement technique : le GIL (Global Interpreter Lock) est une force de frottement dans l'interpréteur Python. Sa gestion picore sur le temps d'exécution des threads, de façon proportionnelle au nombre de tâches concurrentes en cours d'exécution. En somme, plus il y a de threads, plus le programme est ralenti, ce qui est embarrassant dans de nombreuses applications.
-
-Où les interruptions sont prédictibles et explicites, donc tout le code entre deux interruptions est atomique : si vous ne placez pas d'interruption explicite entre deux lignes de code celles-ci seront exécutées d'un bloc, sans risque de modification extérieure.
-
-Où l'ordonnancement entre les tâches n'est pas réalisé par le système d'exploitation, mais dans le userland et de façon plus intelligente et adaptée à la nature des tâches à exécuter en concurrence.
 
 ##==##
+
 <!-- .slide: class="with-code" -->
 
 # Pour aller plus loin - 09
@@ -30,16 +29,26 @@ Où l'ordonnancement entre les tâches n'est pas réalisé par le système d'exp
 **Les coroutines - `async/await`**
 
 ```python
-import aiohttp
+```python
 import asyncio
+import httpx # Bibliothèque HTTP moderne et compatible async
 
+# `async def` crée une coroutine. Seul ce type de fonction peut utiliser `await`.
 async def fetch_and_print(url):
-  async with aiohttp.ClientSession() as session:
-    response = await session.get(url)
-    print(await response.text())
+  # `async with` gère un context manager asynchrone.
+  async with httpx.AsyncClient() as client:
+    # `await` suspend la fonction, attend le résultat de la requête et permet à d'autres tâches de s'exécuter pendant ce temps.
+    response = await client.get(url)
+    print(f"Status for {url}: {response.status_code}")
 
-asyncio.run(fetch_and_print("https://python.org/"))
+# `main` doit aussi être une coroutine pour pouvoir `await` d'autres coroutines.
+async def main():
+    # `asyncio.gather` lance plusieurs tâches en parallèle et attend leur achèvement.
+    await asyncio.gather(
+        fetch_and_print("https://python.org/"),
+        fetch_and_print("https://www.sfeir.com/")
+    )
+
+# `asyncio.run()` est le point d'entrée qui démarre l'event loop et exécute la coroutine principale `main`.
+asyncio.run(main())
 ```
-
-<!-- .element: class="big-code" -->
-

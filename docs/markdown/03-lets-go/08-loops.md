@@ -9,7 +9,9 @@
   * Un itérable (une liste, une chaîne de caractère)
   * Un itérateur (une classe, un générateur)
 
+
 ##==##
+
 <!-- .slide: class="with-code" -->
 
 # Les bases - 07
@@ -32,7 +34,9 @@ Notes:
 Range renvoie une liste => itérable
 range(start, stop not included, step)
 
+
 ##==##
+
 <!-- .slide: class="with-code" -->
 
 # Les bases - 07

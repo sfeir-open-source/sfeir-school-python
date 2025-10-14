@@ -1,8 +1,9 @@
+import { SfeirThemeInitializer } from '../web_modules/sfeir-school-theme/dist/sfeir-school-theme.mjs';
+
 function schoolSlides() {
   return [
     '00-school/00-TITLE.md',
-    '00-school/01-speaker-amo.md',
-    '00-school/02-speaker-jbo.md',
+    '00-school/02-speaker-ake.md',
     '00-school/03-repository.md',
     '00-school/04-app-screenshot.md',
     '00-school/05-what-we-will-do.md',
@@ -23,8 +24,10 @@ function installationSlides() {
   return [
     '02-installation/00-TITLE.md',
     '02-installation/01-python.md',
-    '02-installation/02-pip.md',
-    '02-installation/03-virtualenv.md',
+    '02-installation/02-virtualenv.md',
+    '02-installation/03-pip.md',
+    '02-installation/04-asdf-mise.md',
+    '02-installation/05-poetry-uv.md',
   ];
 }
 
@@ -44,7 +47,7 @@ function letsGoSlides() {
     '03-lets-go/11-packages.md',
     '03-lets-go/12-imports.md',
     '03-lets-go/13-standard-library.md',
-    '03-lets-go/14-step-02.md'
+    '03-lets-go/14-step-02.md',
   ];
 }
 
@@ -62,21 +65,21 @@ function letsGoFurtherSlides() {
     '04-lets-go-further/11-coroutines.md',
     '04-lets-go-further/12-code-conventions.md',
     '04-lets-go-further/13-pylint.md',
-    '04-lets-go-further/14-unit-tests.md'
+    '04-lets-go-further/14-unit-tests.md',
+    '04-lets-go-further/15-step-03.md',
   ];
 }
 
 function fastApi() {
   return [
     '05-fastapi/00-TITLE.md',
-    '05-fastapi/01-steps.md',
+    '05-fastapi/01-fastapi-and-steps.md',
+    '05-fastapi/02-fastmcp.md',
   ];
 }
 
 function conclusionSlides() {
-  return [
-    '06-conclusion/00-TITLE.md',
-  ];
+  return ['06-conclusion/00-TITLE.md'];
 }
 
 function formation() {
@@ -88,11 +91,9 @@ function formation() {
     ...letsGoFurtherSlides(),
     ...fastApi(),
     ...conclusionSlides(),
-  ].map(slidePath => {
+  ].map((slidePath) => {
     return { path: slidePath };
   });
 }
 
-export function usedSlides() {
-  return formation();
-}
+SfeirThemeInitializer.init(formation);

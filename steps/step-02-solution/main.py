@@ -22,6 +22,8 @@ def main():
         # Close files
         input_file.close() 
         output_file.close()
+    else:
+      raise Exception("Usage: python main.py <input_text>")
 
 
 if __name__ == "__main__":

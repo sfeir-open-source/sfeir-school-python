@@ -29,7 +29,9 @@ for file_name in list_files:
 ```
 
 
+
 ##==##
+
 <!-- .slide: class="with-code" -->
 # Les bases - 12
 
@@ -50,7 +52,9 @@ if match:
 ```
 <!-- .element: class="big-code" -->
 
+
 ##==##
+
 <!-- .slide: class="with-code" -->
 # Les bases - 12
 
@@ -74,20 +78,39 @@ python3 main.py "test1" "test2" # Output Args used test1 test2
 ```
 <!-- .element: class="big-code" -->
 
+
 ##==##
+
 <!-- .slide: -->
 
 # Les bases - 12
 
 **Les Librairies standard**
 
-Liste non exhaustive de modules standard Python
+Quelques modules incontournables de la bibliothèque standard :
 
-|           |             |         |
-|-----------|-------------|---------|
-| sqlite3   | turtle      | logging |
-| glob      | datetime    | tkinter |
-| math      | collections | secrets |
-| errno     | pprint      | zipfile |
-| threading | enum        | typing  |
-| json      | random      | csv     |
+|               |               |             |
+|---------------|---------------|-------------|
+| `asyncio`     | `collections` | `csv`       |
+| `dataclasses` | `datetime`    | `enum`      |
+| `json`        | `logging`     | `math`      |
+| `pathlib`     | `random`      | `sqlite3`   |
+| `subprocess`  | `threading`   | `typing`    |
+
+
+Notes:
+- **asyncio**: Programmation asynchrone, coroutines. Essentiel pour les I/O non bloquantes.
+- **collections**: Types de données avancés (`Counter`, `defaultdict`, `deque`).
+- **csv**: Lecture et écriture de fichiers CSV.
+- **dataclasses**: Génération de classes de données sans code répétitif.
+- **datetime**: Manipulation des dates et heures.
+- **enum**: Création d'énumérations.
+- **json**: Encodage et décodage du format JSON.
+- **logging**: Journalisation des événements. Indispensable.
+- **math**: Fonctions mathématiques.
+- **pathlib**: Approche orientée objet pour manipuler les chemins du système de fichiers.
+- **random**: Génération de nombres pseudo-aléatoires.
+- **sqlite3**: Base de données légère, sans serveur.
+- **subprocess**: Exécution de commandes externes.
+- **threading**: Programmation concurrente avec des threads.
+- **typing**: Support pour les indications de type. Crucial pour la robustesse du code.
