@@ -24,8 +24,8 @@ function installationSlides() {
   return [
     '02-installation/00-TITLE.md',
     '02-installation/01-python.md',
-    '02-installation/02-pip.md',
-    '02-installation/03-virtualenv.md',
+    '02-installation/02-virtualenv.md',
+    '02-installation/03-pip.md',
     '02-installation/04-asdf-mise.md',
     '02-installation/05-poetry-uv.md',
   ];
