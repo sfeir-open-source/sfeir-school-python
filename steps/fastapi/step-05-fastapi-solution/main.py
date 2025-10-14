@@ -3,6 +3,7 @@ import datetime
 from fastapi import FastAPI, HTTPException
 from databases import Database
 from pydantic import BaseModel
+from contextlib import asynccontextmanager
 
 
 class MessagePost(BaseModel):
@@ -23,17 +24,17 @@ class MessageGet(BaseModel):
 
 database = Database("sqlite:///../test.db")
 
-app = FastAPI()
 
-
-@app.on_event("startup")
-async def database_connect():
+@asynccontextmanager
+async def lifespan(app: FastAPI):
     await database.connect()
+    try:
+        yield
+    finally:
+        await database.disconnect()
 
 
-@app.on_event("shutdown")
-async def database_disconnect():
-    await database.disconnect()
+app = FastAPI(lifespan=lifespan)
 
 
 @app.get("/")

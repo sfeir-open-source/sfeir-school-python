@@ -1,15 +1,18 @@
 from fastapi import FastAPI
+from contextlib import asynccontextmanager
 
-app = FastAPI()
-
-@app.on_event("startup")
-def startup():
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    # Code à exécuter au démarrage
     print("Okay, let's go !")
+    try:
+        yield
+    finally:
+        # Code à exécuter à l'arrêt
+        print("Bye Bye...")
 
-@app.on_event("shutdown")
-def shutdown():
-    print("Bye Bye...")
+app = FastAPI(lifespan=lifespan)
 
 @app.get("/")
-def root():
+async def root():
     return {"message": "Hello world!"}

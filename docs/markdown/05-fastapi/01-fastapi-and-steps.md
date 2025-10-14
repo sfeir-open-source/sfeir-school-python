@@ -24,7 +24,7 @@ Documentation automatique : FastAPI génère la documentation en format Swagger 
 
 # API Python
 
-## TP
+## Exercice
 
 **step-01 : Premiers pas avec FastAPI**
 
@@ -34,13 +34,25 @@ Documentation automatique : FastAPI génère la documentation en format Swagger 
 
 
 ##==##
+<!-- .slide: class="with-code" -->
 
+# API Python
+
+**Swagger**
+- 
+- Une fois votre application démarrée, vous pouvez accéder à la documentation auto-générée (Swagger UI) via l'URL :
+[http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
+- Vous y retrouverez la liste de vos routes et pourrez même les tester.
+
+![](./assets/images/swagger.png 'center')
+
+##==##
 
 <!-- .slide: class="exercice" -->
 
 # API Python
 
-## TP
+## Exercice
 
 **step-02 : Ajoutons une base de données**
 
@@ -89,7 +101,7 @@ not_good = Car(color=['b', 'l', 'u', 'e'], gears=4)
 <!-- .slide: style="font-size: 0.8em;" -->
 # API Python
 
-## TP
+## Exercice
 
 **step-03 : Créons les modèles**
 
@@ -109,7 +121,7 @@ not_good = Car(color=['b', 'l', 'u', 'e'], gears=4)
 
 # API Python
 
-## TP
+## Exercice
 
 **step-04 : Créons les premières routes**
 
@@ -125,7 +137,7 @@ not_good = Car(color=['b', 'l', 'u', 'e'], gears=4)
 <!-- .slide: style="font-size: 0.8em;" -->
 # API Python
 
-## TP
+## Exercice
 
 **step-05 : Créons d'autres routes**
 

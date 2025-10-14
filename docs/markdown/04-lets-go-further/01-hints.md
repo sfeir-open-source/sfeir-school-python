@@ -11,7 +11,7 @@
 <!-- .slide: class="with-code" -->
 # Pour aller plus loin - 01
 
-**Les Hints**
+**Les Type Hints (annotations de type)**
 
 * Un exemple sans hint :
 
@@ -35,7 +35,7 @@ def is_palindrome(s: str) -> bool:
 <!-- .slide: class="with-code" -->
 # Pour aller plus loin - 01
 
-**Les Hints**
+**Les Type Hints (annotations de type)**
 
 ### Depuis Python 3.10
 ```python

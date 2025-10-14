@@ -66,13 +66,14 @@ function letsGoFurtherSlides() {
     '04-lets-go-further/12-code-conventions.md',
     '04-lets-go-further/13-pylint.md',
     '04-lets-go-further/14-unit-tests.md',
+    '04-lets-go-further/15-step-03.md',
   ];
 }
 
 function fastApi() {
   return [
     '05-fastapi/00-TITLE.md',
-    '05-fastapi/01-steps.md',
+    '05-fastapi/01-fastapi-and-steps.md',
     '05-fastapi/02-fastmcp.md',
   ];
 }
