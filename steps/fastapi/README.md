@@ -9,6 +9,7 @@
 #### Méthode classique
 
 ```bash
+python --version ## just verify you currently use the python version recommanded by your teacher
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt

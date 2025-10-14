@@ -5,9 +5,7 @@ aiosqlite==0.21.0
 annotated-types==0.7.0
     # via pydantic
 anyio==4.11.0
-    # via
-    #   starlette
-    #   watchfiles
+    # via starlette
 click==8.1.0
     # via uvicorn
 databases==0.9.0
@@ -18,8 +16,6 @@ greenlet==3.2.4
     # via sqlalchemy
 h11==0.13.0
     # via uvicorn
-httptools==0.6.4
-    # via uvicorn
 idna==3.3
     # via anyio
 pydantic==2.11.9
@@ -28,12 +24,8 @@ pydantic==2.11.9
     #   fastapi
 pydantic-core==2.33.2
     # via pydantic
-python-dotenv==0.20.0
-    # via uvicorn
 pyyaml==6.0.3
-    # via
-    #   fastapi-02 (pyproject.toml)
-    #   uvicorn
+    # via fastapi-02 (pyproject.toml)
 sniffio==1.2.0
     # via anyio
 sqlalchemy==2.0.43
@@ -54,11 +46,3 @@ typing-inspection==0.4.2
     # via pydantic
 uvicorn==0.37.0
     # via fastapi-02 (pyproject.toml)
-uvloop==0.21.0
-    # via
-    #   fastapi-02 (pyproject.toml)
-    #   uvicorn
-watchfiles==1.1.0
-    # via uvicorn
-websockets==15.0.1
-    # via uvicorn
