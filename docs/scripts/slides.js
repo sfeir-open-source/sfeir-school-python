@@ -25,9 +25,8 @@ function installationSlides() {
     '02-installation/00-TITLE.md',
     '02-installation/01-python.md',
     '02-installation/02-virtualenv.md',
-    '02-installation/03-pip.md',
-    '02-installation/04-asdf-mise.md',
-    '02-installation/05-poetry-uv.md',
+    '02-installation/03-mise.md',
+    '02-installation/04-uv.md',
   ];
 }
 
@@ -35,19 +34,19 @@ function letsGoSlides() {
   return [
     '03-lets-go/00-TITLE.md',
     '03-lets-go/01-hello-world.md',
-    '03-lets-go/02-features.md',
     '03-lets-go/03-types.md',
     '03-lets-go/04-collections.md',
-    '03-lets-go/05-functions.md',
-    '03-lets-go/06-variables.md',
-    '03-lets-go/07-conditional-statements.md',
-    '03-lets-go/08-loops.md',
-    '03-lets-go/09-exceptions.md',
+    '03-lets-go/05-idioms.md',
+    '03-lets-go/06-functions.md',
+    '03-lets-go/07-variables.md',
+    '03-lets-go/08-conditional-statements.md',
+    '03-lets-go/09-loops.md',
     '03-lets-go/10-step-01.md',
-    '03-lets-go/11-packages.md',
-    '03-lets-go/12-imports.md',
-    '03-lets-go/13-standard-library.md',
-    '03-lets-go/14-step-02.md',
+    '03-lets-go/11-exceptions.md',
+    '03-lets-go/12-packages.md',
+    '03-lets-go/13-imports.md',
+    '03-lets-go/14-standard-library.md',
+    '03-lets-go/15-step-02.md',
   ];
 }
 
@@ -57,29 +56,48 @@ function letsGoFurtherSlides() {
     '04-lets-go-further/01-hints.md',
     '04-lets-go-further/02-generators.md',
     '04-lets-go-further/03-decorators.md',
-    '04-lets-go-further/04-lambdas.md',
-    '04-lets-go-further/05-list-comprehension.md',
-    '04-lets-go-further/07-classes.md',
-    '04-lets-go-further/09-context-manager.md',
-    '04-lets-go-further/10-callables.md',
-    '04-lets-go-further/11-coroutines.md',
-    '04-lets-go-further/12-code-conventions.md',
-    '04-lets-go-further/13-pylint.md',
-    '04-lets-go-further/14-unit-tests.md',
-    '04-lets-go-further/15-step-03.md',
+    '04-lets-go-further/04-comprehensions-lambdas.md',
+    '04-lets-go-further/05-classes.md',
+    '04-lets-go-further/06-dataclasses.md',
+    '04-lets-go-further/07-context-managers.md',
+    '04-lets-go-further/08-async.md',
+    '04-lets-go-further/09-code-conventions.md',
+    '04-lets-go-further/10-quality.md',
+    '04-lets-go-further/11-tests.md',
+    '04-lets-go-further/12-step-03.md',
   ];
 }
 
-function fastApi() {
+function fastApiSlides() {
   return [
     '05-fastapi/00-TITLE.md',
-    '05-fastapi/01-fastapi-and-steps.md',
-    '05-fastapi/02-fastmcp.md',
+    '05-fastapi/01-fastapi.md',
+    '05-fastapi/02-pydantic.md',
+    '05-fastapi/03-lab-step-01.md',
+    '05-fastapi/04-sqlmodel.md',
+    '05-fastapi/05-lab-step-02.md',
+  ];
+}
+
+function mcpSlides() {
+  return [
+    '06-mcp/00-TITLE.md',
+    '06-mcp/01-what-is-mcp.md',
+    '06-mcp/02-security.md',
+    '06-mcp/03-fastmcp.md',
+    '06-mcp/04-connect-agents.md',
+    '06-mcp/05-from-fastapi.md',
+    '06-mcp/06-labs.md',
   ];
 }
 
 function conclusionSlides() {
-  return ['06-conclusion/00-TITLE.md'];
+  return [
+    '07-conclusion/00-TITLE.md',
+    '07-conclusion/01-recap.md',
+    '07-conclusion/02-resources.md',
+    '07-conclusion/03-feedback.md',
+  ];
 }
 
 function formation() {
@@ -89,7 +107,8 @@ function formation() {
     ...installationSlides(),
     ...letsGoSlides(),
     ...letsGoFurtherSlides(),
-    ...fastApi(),
+    ...fastApiSlides(),
+    ...mcpSlides(),
     ...conclusionSlides(),
   ].map((slidePath) => {
     return { path: slidePath };

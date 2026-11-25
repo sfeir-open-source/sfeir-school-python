@@ -397,9 +397,9 @@ function extractLabsListFromPackageJson(packageJson) {
   }
   return [];
 }
-function getAllLabsFromWorkspace(rootDir, { withSolution = true } = {}) {
+function getAllLabsFromWorkspace(rootDir, { withSolution = true, ignoreStepsDirectories = [] } = {}) {
   const packageJson = getWorkspaceStepsPackageJson(rootDir);
-  const allCommands = extractLabsListFromPackageJson(packageJson);
+  const allCommands = extractLabsListFromPackageJson(packageJson).filter((command) => !ignoreStepsDirectories.includes(command));
   if (withSolution) {
     return allCommands;
   } else {
@@ -408,8 +408,8 @@ function getAllLabsFromWorkspace(rootDir, { withSolution = true } = {}) {
     );
   }
 }
-function getLabsCommands(rootDir, { withSolution = false } = {}) {
-  return getAllLabsFromWorkspace(rootDir, { withSolution });
+function getLabsCommands(rootDir, { withSolution = false, ignoreStepsDirectories = [] } = {}) {
+  return getAllLabsFromWorkspace(rootDir, { withSolution, ignoreStepsDirectories });
 }
 function isLabCommandExists(rootDir, commandName) {
   return getLabsCommands(rootDir).includes(commandName);
@@ -581,7 +581,7 @@ function checkLabCommand(rootDir, labSlides, config) {
   const allLabSlides = labSlides.map(
     (slide) => readSlideFile(rootDir, slide.path)
   );
-  const labsCommands = getLabsCommands(rootDir);
+  const labsCommands = getLabsCommands(rootDir, config);
   for (const labCommand of labsCommands) {
     check("L_001", `"${labCommand}" should be used in a lab slide`, () => {
       return allLabSlides.some(
@@ -941,7 +941,7 @@ var init_package = __esm({
   "package.json"() {
     package_default = {
       name: "sfeir-school-theme",
-      version: "4.0.0-rc-14",
+      version: "4.0.0-rc-16",
       description: "Sfeir School Theme for RevealJS",
       files: [
         "dist"
@@ -1005,7 +1005,7 @@ var init_package = __esm({
       },
       homepage: "https://github.com/sfeir-open-source/sfeir-school-theme#readme",
       dependencies: {
-        "@talk-control/talk-control-revealjs-extensions": "^1.0.0-rc-3",
+        "@talk-control/talk-control-revealjs-extensions": "^1.0.0-rc-4",
         "lit-html": "^3.1.4"
       },
       devDependencies: {

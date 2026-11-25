@@ -10,33 +10,7 @@ Un venv est un répertoire isolé qui contient une installation spécifique de P
 
 **Solution** : `venv` crée un "bac à sable" pour chaque projet. Chaque projet a ses propres dépendances, ce qui résout les conflits.
 
-##==##
+Notes:
+Sans venv, toutes les installations `pip` vont dans le Python du système. Deux projets qui veulent des versions différentes d'une même bibliothèque finissent par se marcher dessus.
 
-<!-- .slide: class="with-code" -->
-
-
-# Installation de l’environnement
-
-1.  **Créer un environnement virtuel**
-
-    Le module `venv` est inclus dans Python, il n'y a donc rien à installer.
-    Créez l'environnement (par convention, on le nomme `.venv`) :
-    ```bash
-    cd mon-projet/
-    python3 -m venv .venv
-    ```
-
-2.  **Activer l'environnement**
-    ```bash
-    source .venv/bin/activate
-    ```
-    Une fois activé, votre terminal affichera `(.venv)` au début de la ligne.
-
-3.  **Désactiver l'environnement**
-
-    Quand vous avez fini de travailler sur le projet :
-    ```bash
-    deactivate
-    ```
-
-<!-- .element: class="big-code" -->
+On ne détaille pas la création d'un venv à la main (`python3 -m venv .venv`, activation, `pip install`) : avec uv, vu plus loin, le venv est créé et utilisé automatiquement, sans activation. Le principe reste le même : un dossier `.venv` dans le projet.

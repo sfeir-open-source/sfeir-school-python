@@ -1,9 +1,14 @@
 # Installation de l’environnement
 
-**Installation de Python 3.12+**
+**Installer Python 3.14**
 
-* https://www.python.org/downloads/
-* Vérifier l’installation : `$ python --version`
+* Avec uv (recommandé dans cette formation) : `uv python install 3.14`
+* Ou depuis https://www.python.org/downloads/
+* Vérifier : `python3 --version` (sous Windows : `python --version`) affiche `Python 3.14.x`
 
 Notes:
-Par défaut Python est installé sur toutes les machines Unix en standard (GNU/Linux, BSD, et macOS), cependant il s’agit de version python2, et vous aurez besoin d’installer la version 3. Sur Windows, Python n’est pas disponible par défaut et vous devrez l’installer quoi qu’il arrive.Pour l’installation, vous pouvez passer par le site officiel de Python ou votre package manager préféré (apt, brew, yum, apk…) pour l’installation en ligne de commandePensez à bien vérifier que votre version est en 3.7+ en faisant un `python --version ` (note, si votre installation contient déjà une instance de Python 2, votre Python3 devra peut-être être invoqué avec `python3 --version`
+Cette formation utilise Python 3.14. Le fichier `pyproject.toml` du dépôt exige `requires-python = ">=3.14"` : un interpréteur plus ancien sera refusé par `uv sync`.
+
+Deux façons d'installer Python. La plus simple : laisser uv installer l'interpréteur, avec `uv python install 3.14`. uv gère lui-même les versions de Python, sur toutes les plateformes ; les slides suivantes présentent uv. L'autre option est l'installateur officiel sur python.org, ou votre gestionnaire de paquets habituel (apt, brew, winget…).
+
+Si vous avez déjà Python 3.14, rien à faire. Vérifiez la version avec la commande ci-dessus. Si `python3` affiche une autre version, utilisez uv : il n'a pas besoin d'un Python déjà installé pour installer une version précise.

@@ -5,18 +5,19 @@
 Interpréteur Python :
 
 * Façon la plus rapide de tester du code
-* Lancement par `python3` (sans paramètre) en ligne de commande
-* `quit()`, `help(‘function or lib’)`, `dir(‘type or lib’)`
+* Lancement avec `python3` (sans paramètre) dans le terminal
+* `quit()`, `help(print)`, `dir(int)`
 
 Notes:
-Comme on le disait plus tôt, Python est un langage interprété, par conséquent il dispose d’un moteur d’exécution. Vous pouvez accéder directement à ce moteur en tapant juste “python3” dans votre terminal.Cela démarrera un interpreteur REPL (Read, Eval, Print, Loop) Python qui attendra vos inputs pour les évaluer (à noter, un interpréteur à une session courante dans laquelle il va stocker l’historique de vos commandes ainsi que les fonctions, types ou variable que vous avez créé précédement.
+Python est un langage interprété : il dispose d'un moteur d'exécution accessible directement. Tapez `python3` dans votre terminal pour démarrer l'interpréteur interactif, appelé REPL (Read, Eval, Print, Loop). Il lit votre saisie, l'évalue, affiche le résultat, puis recommence.
 
-Dans cet interpréteur, 3 commandes sont importantes :
+La session garde en mémoire les variables, fonctions et types créés, jusqu'à sa fermeture.
 
-- quit() pour quitter l’interpréteur
-- help(‘function or lib’) qui va vous fournir la documentation de la fonction ou la lib donnée (à noter si votre fonction vit dans une lib tierce, vous devrez d’abord importer cette lib pour utiliser help dessus)
-- dir(‘type or lib’) qui va lister l’ensemble des méthodes définies pour un type donné (dir(int) par exemple) ou une librairie donnée (dir(unittest))
+Trois commandes à connaître :
 
+- `quit()` pour quitter (Ctrl+D sous macOS et Linux, Ctrl+Z puis Entrée sous Windows)
+- `help(objet)` affiche la documentation d'une fonction, d'un type ou d'une bibliothèque. Une bibliothèque tierce doit d'abord être importée.
+- `dir(objet)` liste les attributs et méthodes d'un type (`dir(int)`) ou d'un module (`import unittest`, puis `dir(unittest)`).
 
 ##==##
 
@@ -26,9 +27,9 @@ Dans cet interpréteur, 3 commandes sont importantes :
 
 **Hello, world!**
 
-```bash
+```pycon
 $ python3
-Python 3.7.4 (default, Sep 7 2019, 18:27:02)
+Python 3.14.10 (...)
 >>> print('Hello world!')
 Hello world!
 >>> quit()
@@ -38,8 +39,11 @@ $
 <!-- .element: class="big-code" -->
 
 Notes:
-Exemple très simple, mais très efficace. Pas de compilation nécessaire, pas d’installation tierce.
+Exemple très simple, mais très efficace. Pas de compilation à lancer, pas d'installation tierce.
 
+La bannière affiche la version de l'interpréteur : c'est la première vérification à faire quand un exemple ne se comporte pas comme attendu. Ici, 3.14.
+
+Les lignes commençant par `>>>` sont la saisie ; les lignes sans préfixe sont la réponse de l'interpréteur.
 
 ##==##
 
@@ -51,19 +55,26 @@ Exemple très simple, mais très efficace. Pas de compilation nécessaire, pas d
 
 Fichier `main.py` :
 
-```bash
-#!/bin/python3
+```python
+#!/usr/bin/env python3
 print('Hello world!')
 ```
 
 <!-- .element: class="big-code" -->
 
-`$ python3 main.py`
+```bash
+python3 main.py
+```
 
-ou
+Sous macOS ou Linux, après `chmod +x main.py` :
 
-`$ chmod +x main.py`
-`$ ./main.py`
+```bash
+./main.py
+```
 
 Notes:
-On peut également écrire les instructions python dans un fichier (un script), et lancer manuellement le moteur Python sur ce fichier.On peut même donner une indication à notre système (si c’est un système Unix comme GNU/Linux ou macOS) sur le moteur à utiliser avec #!/bin/python (ou autre chose si votre chemin vers python3 est différent -- vous pouvez faire un which python3 pour le savoir), rendre le fichier executable et le lancer directement.
+On écrit les instructions dans un fichier, un script, qu'on confie à l'interpréteur avec `python3 main.py`.
+
+La première ligne, le shebang, indique au système quel interpréteur utiliser sous macOS et Linux. `#!/usr/bin/env python3` cherche `python3` dans le PATH : c'est plus portable qu'un chemin figé comme `/bin/python3`. Pour trouver le chemin de votre interpréteur, utilisez `which python3`.
+
+Sous Windows, le shebang est ignoré : on lance le script avec `python main.py`.
