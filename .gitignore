@@ -69,8 +69,18 @@ typings/
 #Dev
 docs/test.html
 
-uv.lock
 test.db
 __pycache__
 .venv
 .idea/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+*.db
+.DS_Store
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+output.txt
