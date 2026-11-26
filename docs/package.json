@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/feir-open-source/sfeir-school-python.git"
+    "url": "git+https://github.com/sfeir-open-source/sfeir-school-python.git"
   },
   "keywords": [
     "python",
@@ -16,9 +16,9 @@
   ],
   "license": "CC0-3.0",
   "bugs": {
-    "url": "https://github.com/feir-open-source/sfeir-school-python/issues"
+    "url": "https://github.com/sfeir-open-source/sfeir-school-python/issues"
   },
-  "homepage": "https://github.com/feir-open-source/sfeir-school-python#readme",
+  "homepage": "https://github.com/sfeir-open-source/sfeir-school-python#readme",
   "scripts": {
     "sass": "sass ./scss/slides.scss:./css/slides.css --source-map --watch",
     "sass-once": "sass ./scss/slides.scss:./css/slides.css --source-map",
@@ -28,7 +28,7 @@
     "prepare": "node ./scripts/dont-touch/prepare-script.js"
   },
   "dependencies": {
-    "sfeir-school-theme": "^4.0.0-rc-15"
+    "sfeir-school-theme": "^4.0.0-rc-16"
   },
   "devDependencies": {
     "chokidar-cli": "^3.0.0",

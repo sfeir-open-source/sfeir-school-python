@@ -8,7 +8,7 @@
 
 <h2> Aurélien <span> Kempiak</span></h2>
 
-### Network DevOps
+### AI Engineer
 
 ![](./assets/images/logo_sfeir_blanc.png 'company')
 

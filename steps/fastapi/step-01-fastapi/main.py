@@ -1,1 +1,0 @@
-# find simple fastapi example on Internet ;)

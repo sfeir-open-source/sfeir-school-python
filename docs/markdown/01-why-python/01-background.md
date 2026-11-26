@@ -6,6 +6,8 @@
 * Nom en référence des “Monty Python”.
 
 Notes:
-Créé par Guido van Rossum comme side project (première version, 0.9.0, publiée sur le channel IRC Usenet alt.sources en 1991).Par la suite Van Rossum est devenu le “
-benevolant dictator for life
-” du langage -- il arbitre les décisions techniques concernant l’évolution du langage dès que cela est nécessaire, rôle qu’il quitte en 2018.
+Python a été créé par Guido van Rossum comme projet personnel. La première version, 0.9.0, a été publiée en 1991 sur Usenet, dans le groupe alt.sources.
+
+Pendant longtemps, Guido van Rossum a été le « dictateur bienveillant à vie » du projet : il tranchait les décisions d'évolution du langage. Il a quitté ce rôle en 2018, et un conseil de direction a pris le relais.
+
+Le nom ne vient pas du serpent : c'est une référence aux Monty Python, dont les sketchs ont inspiré Guido.
